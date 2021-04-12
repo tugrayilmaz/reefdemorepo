@@ -1,10 +1,10 @@
 import {
-  typesBundle as acalaTypesBundle,
-  types as acalaTypes,
-  typesAlias as acalaTypeAlias,
-  rpc as acalaRpc,
-  signedExtensions as acalaSignedExtensions
-} from '@acala-network/type-definitions';
+  typesBundle as reefTypesBundle,
+  types as reefTypes,
+  typesAlias as reefTypeAlias,
+  rpc as reefRpc,
+  signedExtensions as reefSignedExtensions
+} from '@reef-defi/type-definitions';
 import {
   OverrideBundleType,
   OverrideModuleType,
@@ -22,12 +22,12 @@ import './interfaces/augment-types';
 
 export * from './interfaces/augment-api-mobx';
 
-export const types: RegistryTypes = acalaTypes;
+export const types: RegistryTypes = reefTypes;
 
-export const rpc: Record<string, Record<string, DefinitionRpc | DefinitionRpcSub>> = acalaRpc;
+export const rpc: Record<string, Record<string, DefinitionRpc | DefinitionRpcSub>> = reefRpc;
 
-export const typesAlias: Record<string, OverrideModuleType> = acalaTypeAlias;
+export const typesAlias: Record<string, OverrideModuleType> = reefTypeAlias;
 
-export const typesBundle = (acalaTypesBundle as unknown) as OverrideBundleType;
+export const typesBundle = (reefTypesBundle as unknown) as OverrideBundleType;
 
-export const signedExtensions = acalaSignedExtensions;
+export const signedExtensions = reefSignedExtensions;

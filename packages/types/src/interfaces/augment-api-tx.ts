@@ -3,21 +3,21 @@
 
 import type { Compact, Vec, bool, u32 } from '@polkadot/types';
 import type { AnyNumber } from '@polkadot/types/types';
-import type { ChangeBalance, ChangeOptionRate, ChangeOptionRatio } from '@acala-network/types/interfaces/cdpEngine';
-import type { RedeemStrategy } from '@acala-network/types/interfaces/homa';
-import type { AirDropCurrencyId, Amount, AmountOf, AuctionId, CurrencyId, CurrencyIdOf } from '@acala-network/types/interfaces/primitives';
-import type { Balance, BalanceOf, BlockNumber, Call, LookupSource } from '@acala-network/types/interfaces/runtime';
-import type { ChangeRate, ChangeRatio, PolkadotAccountId } from '@acala-network/types/interfaces/stakingPool';
-import type { Rate } from '@acala-network/types/interfaces/support';
 import type { Extrinsic } from '@polkadot/types/interfaces/extrinsics';
+import type { ChangeBalance, ChangeOptionRate, ChangeOptionRatio } from '@reef-defi/types/interfaces/cdpEngine';
+import type { RedeemStrategy } from '@reef-defi/types/interfaces/homa';
+import type { AirDropCurrencyId, Amount, AmountOf, AuctionId, CurrencyId, CurrencyIdOf } from '@reef-defi/types/interfaces/primitives';
+import type { Balance, BalanceOf, BlockNumber, Call, LookupSource } from '@reef-defi/types/interfaces/runtime';
+import type { ChangeRate, ChangeRatio, PolkadotAccountId } from '@reef-defi/types/interfaces/stakingPool';
+import type { Rate } from '@reef-defi/types/interfaces/support';
 import type { ApiTypes, SubmittableExtrinsic } from '@polkadot/api/types';
 
 declare module '@polkadot/api/types/submittable' {
   export interface AugmentedSubmittables<ApiType> {
     airDrop: {
       [key: string]: SubmittableExtrinsicFunction<ApiType>;
-      airdrop: AugmentedSubmittable<(to: LookupSource | { Id: any } | { Index: any } | { Raw: any } | { Address32: any } | { Address20: any } | string | Uint8Array, currencyId: AirDropCurrencyId | 'KAR' | 'ACA' | number | Uint8Array, amount: Balance | AnyNumber | Uint8Array) => SubmittableExtrinsic<ApiType>, [LookupSource, AirDropCurrencyId, Balance]>;
-      updateAirdrop: AugmentedSubmittable<(to: LookupSource | { Id: any } | { Index: any } | { Raw: any } | { Address32: any } | { Address20: any } | string | Uint8Array, currencyId: AirDropCurrencyId | 'KAR' | 'ACA' | number | Uint8Array, amount: Balance | AnyNumber | Uint8Array) => SubmittableExtrinsic<ApiType>, [LookupSource, AirDropCurrencyId, Balance]>;
+      airdrop: AugmentedSubmittable<(to: LookupSource | { Id: any } | { Index: any } | { Raw: any } | { Address32: any } | { Address20: any } | string | Uint8Array, currencyId: AirDropCurrencyId | 'KAR' | 'REEF' | number | Uint8Array, amount: Balance | AnyNumber | Uint8Array) => SubmittableExtrinsic<ApiType>, [LookupSource, AirDropCurrencyId, Balance]>;
+      updateAirdrop: AugmentedSubmittable<(to: LookupSource | { Id: any } | { Index: any } | { Raw: any } | { Address32: any } | { Address20: any } | string | Uint8Array, currencyId: AirDropCurrencyId | 'KAR' | 'REEF' | number | Uint8Array, amount: Balance | AnyNumber | Uint8Array) => SubmittableExtrinsic<ApiType>, [LookupSource, AirDropCurrencyId, Balance]>;
     };
     auction: {
       [key: string]: SubmittableExtrinsicFunction<ApiType>;

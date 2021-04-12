@@ -3,12 +3,12 @@
 
 import type { Enum, i128, u128, u32 } from '@polkadot/types';
 import type { ITuple } from '@polkadot/types/types';
-import type { EvmAddress } from '@acala-network/types/interfaces/evm';
+import type { EvmAddress } from '@reef-defi/types/interfaces/evm';
 
 /** @name AirDropCurrencyId */
 export interface AirDropCurrencyId extends Enum {
   readonly isKar: boolean;
-  readonly isAca: boolean;
+  readonly isReef: boolean;
 }
 
 /** @name Amount */
@@ -26,7 +26,7 @@ export interface AuctionIdOf extends AuctionId {}
 /** @name AuthoritysOriginId */
 export interface AuthoritysOriginId extends Enum {
   readonly isRoot: boolean;
-  readonly isAcalaTreasury: boolean;
+  readonly isReefTreasury: boolean;
   readonly isHonzonTreasury: boolean;
   readonly isHomaTreasury: boolean;
   readonly isDswf: boolean;
@@ -48,7 +48,7 @@ export interface CurrencyIdOf extends CurrencyId {}
 /** @name DataProviderId */
 export interface DataProviderId extends Enum {
   readonly isAggregated: boolean;
-  readonly isAcala: boolean;
+  readonly isReef: boolean;
   readonly isBand: boolean;
 }
 
@@ -60,7 +60,7 @@ export interface Share extends u128 {}
 
 /** @name TokenSymbol */
 export interface TokenSymbol extends Enum {
-  readonly isAca: boolean;
+  readonly isReef: boolean;
   readonly isAusd: boolean;
   readonly isDot: boolean;
   readonly isLdot: boolean;

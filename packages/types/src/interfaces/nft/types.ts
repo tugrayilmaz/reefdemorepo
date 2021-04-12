@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 import type { Bytes, Set, Struct, u32, u64 } from '@polkadot/types';
-import type { AccountId, Balance } from '@acala-network/types/interfaces/runtime';
+import type { AccountId, Balance } from '@reef-defi/types/interfaces/runtime';
 
 /** @name CID */
 export interface CID extends Bytes {}

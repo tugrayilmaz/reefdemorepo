@@ -8,7 +8,7 @@ export default {
     Share: 'u128',
     TokenSymbol: {
       _enum: {
-        ACA: 0,
+        REEF: 0,
         AUSD: 1,
         DOT: 2,
         LDOT: 3,
@@ -42,13 +42,13 @@ export default {
     },
     CurrencyIdOf: 'CurrencyId',
     AirDropCurrencyId: {
-      _enum: ['KAR', 'ACA']
+      _enum: ['KAR', 'REEF']
     },
     AuthoritysOriginId: {
-      _enum: ['Root', 'AcalaTreasury', 'HonzonTreasury', 'HomaTreasury', 'DSWF']
+      _enum: ['Root', 'ReefTreasury', 'HonzonTreasury', 'HomaTreasury', 'DSWF']
     },
     DataProviderId: {
-      _enum: ['Aggregated', 'Acala', 'Band']
+      _enum: ['Aggregated', 'Reef', 'Band']
     },
     TradingPair: '(CurrencyId,  CurrencyId)',
     NFTBalance: 'u128'

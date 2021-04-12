@@ -1,1 +1,1 @@
-# @acala-network/sdk-loan
+# @reef-defi/sdk-loan

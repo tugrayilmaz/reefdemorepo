@@ -1,7 +1,7 @@
 import { ApiPromise, ApiRx } from '@polkadot/api';
-import { CurrencyId, TokenSymbol } from '@acala-network/types/interfaces';
+import { CurrencyId, TokenSymbol } from '@reef-defi/types/interfaces';
 import { assert } from '@polkadot/util';
-import primitivesConfig from '@acala-network/type-definitions/primitives';
+import primitivesConfig from '@reef-defi/type-definitions/primitives';
 
 import { tokenConfig } from './token-config';
 import { CHAIN } from './type';
@@ -56,7 +56,7 @@ export class Token extends BaseToken {
 
     this.name = config.name;
     this.symbol = config.symbol || config.name;
-    this.chain = config.chain || 'acala';
+    this.chain = config.chain || 'reef';
   }
 
   public isEqual(token: Token): boolean {

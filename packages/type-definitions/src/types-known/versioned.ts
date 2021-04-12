@@ -6,7 +6,7 @@ const typesBundleTypes = [
       Address: 'LookupSource',
       LookupSource: 'IndicesLookupSource',
       TokenSymbol: {
-        _enum: ['ACA', 'AUSD', 'DOT', 'XBTC', 'LDOT', 'RENBTC']
+        _enum: ['REEF', 'AUSD', 'DOT', 'XBTC', 'LDOT', 'RENBTC']
       }
     }
   },
@@ -16,7 +16,7 @@ const typesBundleTypes = [
       Address: 'GenericMultiAddress',
       LookupSource: 'GenericMultiAddress',
       TokenSymbol: {
-        _enum: ['ACA', 'AUSD', 'DOT', 'XBTC', 'LDOT', 'RENBTC']
+        _enum: ['REEF', 'AUSD', 'DOT', 'XBTC', 'LDOT', 'RENBTC']
       }
     }
   },

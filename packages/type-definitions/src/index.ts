@@ -15,7 +15,7 @@ import nomineesElection from './nomineesElection';
 import primitives from './primitives';
 import renvmBridge from './renvmBridge';
 import runtime from './runtime';
-import { signedExtensions as acalaSignedExtensions } from './signedExtensions';
+import { signedExtensions as reefSignedExtensions } from './signedExtensions';
 import stakingPool from './stakingPool';
 import support from './support';
 import versioned from './types-known/versioned';
@@ -34,7 +34,7 @@ const additionalOverride = {
       Currencies: 'Null',
       Tokens: 'Null',
       Vesting: 'Null',
-      AcalaTreasury: 'Null',
+      ReefTreasury: 'Null',
       Utility: 'Null',
       Multisig: 'Null',
       Recovery: 'Null',
@@ -58,9 +58,9 @@ const additionalOverride = {
       TechnicalCommitteeMembership: 'Null',
       Authority: 'DelayedOrigin',
       ElectionsPhragmen: 'Null',
-      AcalaOracle: 'Null',
+      ReefOracle: 'Null',
       BandOracle: 'Null',
-      OperatorMembershipAcala: 'Null',
+      OperatorMembershipReef: 'Null',
       OperatorMembershipBand: 'Null',
       Auction: 'Null',
       Rewards: 'Null',
@@ -89,7 +89,7 @@ const additionalOverride = {
   }
 };
 
-const acalaDefs = {
+const reefDefs = {
   accounts,
   auctionManager,
   cdpEngine,
@@ -110,7 +110,7 @@ const acalaDefs = {
 
 export const types = {
   ...ormlTypes,
-  ...typesFromDefs(acalaDefs),
+  ...typesFromDefs(reefDefs),
   ...additionalOverride
 };
 
@@ -119,13 +119,13 @@ export const typesBundle = {
     mandala: {
       types: versioned
     },
-    acala: {
+    reef: {
       types: versioned
     }
   }
 };
-export const rpc = jsonrpcFromDefs(acalaDefs, { ...ormlRpc });
-export const typesAlias = typesAliasFromDefs(acalaDefs, { ...ormlAlias });
+export const rpc = jsonrpcFromDefs(reefDefs, { ...ormlRpc });
+export const typesAlias = typesAliasFromDefs(reefDefs, { ...ormlAlias });
 
 const bundle = {
   rpc,
@@ -144,9 +144,9 @@ const bundle = {
 // Type overrides have priority issues
 export const typesBundleForPolkadot = {
   spec: {
-    acala: bundle,
+    reef: bundle,
     mandala: bundle
   }
 };
 
-export const signedExtensions = acalaSignedExtensions;
+export const signedExtensions = reefSignedExtensions;

@@ -1,3 +1,3 @@
-# @acala-network/app-util
+# @reef-defi/app-util
 
-Utilities to work with Acala Network
+Utilities to work with Reef Chain

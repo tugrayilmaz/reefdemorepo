@@ -2,7 +2,7 @@ import { FixedPointNumber } from './fixed-point-number';
 
 export type KNOWN_MODULES = 'honzon' | 'swap' | 'homa';
 
-export type CHAIN = 'acala' | 'kurara' | 'polkadot' | 'kusama' | unknown;
+export type CHAIN = 'reef' | 'kurara' | 'polkadot' | 'kusama' | unknown;
 
 export interface Token {
   symbol: string;

@@ -1,8 +1,8 @@
 import { Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { FixedPointNumber, Token } from '@acala-network/sdk-core';
-import { CurrencyId, Position } from '@acala-network/types/interfaces';
-import { DerivedLoanType } from '@acala-network/api-derive';
+import { FixedPointNumber, Token } from '@reef-defi/sdk-core';
+import { CurrencyId, Position } from '@reef-defi/types/interfaces';
+import { DerivedLoanType } from '@reef-defi/api-derive';
 import { ApiRx } from '@polkadot/api';
 
 export interface LoanParams {

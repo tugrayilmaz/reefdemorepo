@@ -3,19 +3,6 @@
 
 import type { Bytes, Option, U8aFixed, Vec, bool, u32, u64 } from '@polkadot/types';
 import type { AnyNumber, ITuple } from '@polkadot/types/types';
-import type { CollateralAuctionItem, DebitAuctionItem, SurplusAuctionItem } from '@acala-network/types/interfaces/auctionManager';
-import type { RiskManagementParams } from '@acala-network/types/interfaces/cdpEngine';
-import type { TradingPairStatus } from '@acala-network/types/interfaces/dex';
-import type { CodeInfo, EvmAddress } from '@acala-network/types/interfaces/evm';
-import type { PoolId } from '@acala-network/types/interfaces/incentives';
-import type { Position } from '@acala-network/types/interfaces/loans';
-import type { ClassId, ClassInfoOf, TokenId, TokenInfoOf } from '@acala-network/types/interfaces/nft';
-import type { BondingLedger } from '@acala-network/types/interfaces/nomineesElection';
-import type { AirDropCurrencyId, AuctionId, CurrencyId, TradingPair } from '@acala-network/types/interfaces/primitives';
-import type { DestAddress, PublicKey } from '@acala-network/types/interfaces/renvmBridge';
-import type { AccountId, AccountIndex, Balance, BalanceOf, BlockNumber, H256, Hash, KeyTypeId, Moment, OpaqueCall, OracleKey, Perbill, Releases, Slot, ValidatorId } from '@acala-network/types/interfaces/runtime';
-import type { Ledger, Params, PolkadotAccountId, SubAccountStatus } from '@acala-network/types/interfaces/stakingPool';
-import type { ExchangeRate, Rate } from '@acala-network/types/interfaces/support';
 import type { GraduallyUpdate } from '@open-web3/orml-types/interfaces/graduallyUpdates';
 import type { OrderedSet, TimestampedValueOf } from '@open-web3/orml-types/interfaces/oracle';
 import type { PoolInfo, Share } from '@open-web3/orml-types/interfaces/rewards';
@@ -38,6 +25,19 @@ import type { AccountInfo, ConsumedWeight, DigestOf, EventIndex, EventRecord, La
 import type { Bounty, BountyIndex, OpenTip } from '@polkadot/types/interfaces/treasury';
 import type { Multiplier } from '@polkadot/types/interfaces/txpayment';
 import type { Multisig } from '@polkadot/types/interfaces/utility';
+import type { CollateralAuctionItem, DebitAuctionItem, SurplusAuctionItem } from '@reef-defi/types/interfaces/auctionManager';
+import type { RiskManagementParams } from '@reef-defi/types/interfaces/cdpEngine';
+import type { TradingPairStatus } from '@reef-defi/types/interfaces/dex';
+import type { CodeInfo, EvmAddress } from '@reef-defi/types/interfaces/evm';
+import type { PoolId } from '@reef-defi/types/interfaces/incentives';
+import type { Position } from '@reef-defi/types/interfaces/loans';
+import type { ClassId, ClassInfoOf, TokenId, TokenInfoOf } from '@reef-defi/types/interfaces/nft';
+import type { BondingLedger } from '@reef-defi/types/interfaces/nomineesElection';
+import type { AirDropCurrencyId, AuctionId, CurrencyId, TradingPair } from '@reef-defi/types/interfaces/primitives';
+import type { DestAddress, PublicKey } from '@reef-defi/types/interfaces/renvmBridge';
+import type { AccountId, AccountIndex, Balance, BalanceOf, BlockNumber, H256, Hash, KeyTypeId, Moment, OpaqueCall, OracleKey, Perbill, Releases, Slot, ValidatorId } from '@reef-defi/types/interfaces/runtime';
+import type { Ledger, Params, PolkadotAccountId, SubAccountStatus } from '@reef-defi/types/interfaces/stakingPool';
+import type { ExchangeRate, Rate } from '@reef-defi/types/interfaces/support';
 import type { BaseStorageType, StorageDoubleMap, StorageMap } from '@open-web3/api-mobx';
 
 export interface StorageType extends BaseStorageType {
@@ -77,7 +77,7 @@ export interface StorageType extends BaseStorageType {
      **/
     proposals: StorageMap<ProposalIndex | AnyNumber, Option<Proposal>>;
   };
-  airDrop: {    airDrops: StorageDoubleMap<AccountId | string, AirDropCurrencyId | 'KAR'|'ACA' | number, Balance>;
+  airDrop: {    airDrops: StorageDoubleMap<AccountId | string, AirDropCurrencyId | 'KAR'|'REEF' | number, Balance>;
   };
   auction: {    /**
      * Index auctions by end time.

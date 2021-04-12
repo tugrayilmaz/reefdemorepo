@@ -3,7 +3,7 @@
 
 import type { Option, Struct } from '@polkadot/types';
 import type { ITuple } from '@polkadot/types/types';
-import type { AccountId, Balance, BlockNumber } from '@acala-network/types/interfaces/runtime';
+import type { AccountId, Balance, BlockNumber } from '@reef-defi/types/interfaces/runtime';
 
 /** @name Guarantee */
 export interface Guarantee extends Struct {

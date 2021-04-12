@@ -9,13 +9,13 @@ interface TokenConfigData {
 
 const config: TokenConfigData[] = [
   {
-    chain: 'acala',
-    name: 'ACA',
-    symbol: 'ACA',
+    chain: 'reef',
+    name: 'REEF',
+    symbol: 'REEF',
     decimal: 13
   },
   {
-    chain: 'acala',
+    chain: 'reef',
     name: 'aUSD',
     symbol: 'AUSD',
     decimal: 12
@@ -27,7 +27,7 @@ const config: TokenConfigData[] = [
     decimal: 10
   },
   {
-    chain: 'acala',
+    chain: 'reef',
     name: 'LDOT',
     symbol: 'LDOT',
     decimal: 10
@@ -39,7 +39,7 @@ const config: TokenConfigData[] = [
     decimal: 8
   },
   {
-    chain: 'acala',
+    chain: 'reef',
     name: 'renBTC',
     symbol: 'RENBTC',
     decimal: 8

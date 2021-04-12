@@ -3,8 +3,8 @@ import { Token } from './token';
 import { TokenBalance } from './token-balance';
 
 describe('token balance', () => {
-  const t1 = new Token({ name: 'T1', symbol: 'T1', chain: 'acala', decimal: 8 });
-  const t2 = new Token({ name: 'T2', symbol: 'T2', chain: 'acala', decimal: 14 });
+  const t1 = new Token({ name: 'T1', symbol: 'T1', chain: 'reef', decimal: 8 });
+  const t2 = new Token({ name: 'T2', symbol: 'T2', chain: 'reef', decimal: 14 });
 
   test('token balance constructor should work', () => {
     const t1Balance = new TokenBalance(t1, FixedPointNumber.ONE);

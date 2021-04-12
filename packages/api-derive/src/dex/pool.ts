@@ -1,9 +1,9 @@
 import { ApiInterfaceRx } from '@polkadot/api/types';
 import { map } from 'rxjs/operators';
-import primitivesConfig from '@acala-network/type-definitions/primitives';
+import primitivesConfig from '@reef-defi/type-definitions/primitives';
 import { Observable } from 'rxjs';
 
-import { CurrencyId, Balance } from '@acala-network/types/interfaces';
+import { CurrencyId, Balance } from '@reef-defi/types/interfaces';
 import { memo } from '@polkadot/api-derive/util';
 
 import { DerivedDexPool } from '../types/dex';

@@ -1055,7 +1055,7 @@
               "type": "Vec<CurrencyId>",
               "value": "0x2000010003000200040005000600070008",
               "documentation": [
-                " All non-native currency ids in Acala."
+                " All non-native currency ids in Reef."
               ]
             },
             {
@@ -1064,7 +1064,7 @@
               "value": "0x0000",
               "documentation": [
                 " Native currency id, the actual received currency type as fee for",
-                " treasury. Should be ACA"
+                " treasury. Should be REEF."
               ]
             },
             {
@@ -1626,7 +1626,7 @@
           "index": 8
         },
         {
-          "name": "AcalaTreasury",
+          "name": "ReefTreasury",
           "storage": {
             "prefix": "Treasury",
             "items": [
@@ -8172,9 +8172,9 @@
           "index": 28
         },
         {
-          "name": "AcalaOracle",
+          "name": "ReefOracle",
           "storage": {
-            "prefix": "AcalaOracle",
+            "prefix": "ReefOracle",
             "items": [
               {
                 "name": "RawValues",
@@ -8448,7 +8448,7 @@
           "index": 30
         },
         {
-          "name": "OperatorMembershipAcala",
+          "name": "OperatorMembershipReef",
           "storage": {
             "prefix": "Instance5Membership",
             "items": [
@@ -9192,7 +9192,7 @@
               "type": "CurrencyId",
               "value": "0x0001",
               "documentation": [
-                " The stable currency id, it should be AUSD in Acala."
+                " The stable currency id, it should be AUSD in Reef."
               ]
             },
             {
@@ -9200,7 +9200,7 @@
               "type": "Price",
               "value": "0x000064a7b3b6e00d0000000000000000",
               "documentation": [
-                " The fixed prices of stable currency, it should be 1 USD in Acala."
+                " The fixed prices of stable currency, it should be 1 USD in Reef."
               ]
             },
             {
@@ -9208,7 +9208,7 @@
               "type": "CurrencyId",
               "value": "0x0002",
               "documentation": [
-                " The staking currency id, it should be DOT in Acala."
+                " The staking currency id, it should be DOT in Reef."
               ]
             },
             {
@@ -9216,7 +9216,7 @@
               "type": "CurrencyId",
               "value": "0x0003",
               "documentation": [
-                " The liquid currency id, it should be LDOT in Acala."
+                " The liquid currency id, it should be LDOT in Reef."
               ]
             }
           ],
@@ -11404,7 +11404,7 @@
               "type": "CurrencyId",
               "value": "0x0002",
               "documentation": [
-                " The staking currency id(should be DOT in acala)"
+                " The staking currency id(should be DOT in Reef.)"
               ]
             },
             {
@@ -11412,7 +11412,7 @@
               "type": "CurrencyId",
               "value": "0x0003",
               "documentation": [
-                " The liquid currency id(should be LDOT in acala)"
+                " The liquid currency id(should be LDOT in Reef.)"
               ]
             },
             {
@@ -11900,7 +11900,7 @@
               "type": "CurrencyId",
               "value": "0x0000",
               "documentation": [
-                " The incentive reward type (should be ACA)"
+                " The incentive reward type (should be REEF)"
               ]
             },
             {

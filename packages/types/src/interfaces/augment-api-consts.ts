@@ -3,11 +3,11 @@
 
 import type { Vec, u32 } from '@polkadot/types';
 import type { Codec, ITuple } from '@polkadot/types/types';
-import type { CurrencyId } from '@acala-network/types/interfaces/primitives';
-import type { Balance, BlockNumber, ModuleId, TransactionPriority } from '@acala-network/types/interfaces/runtime';
-import type { ExchangeRate, Rate, Ratio } from '@acala-network/types/interfaces/support';
 import type { Price } from '@open-web3/orml-types/interfaces/traits';
 import type { EraIndex } from '@polkadot/types/interfaces/staking';
+import type { CurrencyId } from '@reef-defi/types/interfaces/primitives';
+import type { Balance, BlockNumber, ModuleId, TransactionPriority } from '@reef-defi/types/interfaces/runtime';
+import type { ExchangeRate, Rate, Ratio } from '@reef-defi/types/interfaces/support';
 import type { ApiTypes } from '@polkadot/api/types';
 
 declare module '@polkadot/api/types/consts' {

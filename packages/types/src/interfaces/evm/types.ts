@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 import type { Bytes, Option, Struct, U128, bool, u32 } from '@polkadot/types';
-import type { Balance, H160, H256, Index } from '@acala-network/types/interfaces/runtime';
+import type { Balance, H160, H256, Index } from '@reef-defi/types/interfaces/runtime';
 
 /** @name CallRequest */
 export interface CallRequest extends Struct {

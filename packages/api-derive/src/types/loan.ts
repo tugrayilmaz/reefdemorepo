@@ -7,7 +7,7 @@ import {
   AccountId,
   Balance,
   ExchangeRate
-} from '@acala-network/types/interfaces';
+} from '@reef-defi/types/interfaces';
 
 export interface DerivedLoanConstants {
   minimumDebitValue: Balance;

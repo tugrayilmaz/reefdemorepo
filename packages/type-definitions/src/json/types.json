@@ -23,7 +23,7 @@
     "DataProviderId": {
         "_enum": [
             "Aggregated",
-            "Acala",
+            "Reef",
             "Band"
         ]
     },
@@ -252,7 +252,7 @@
     "AuctionIdOf": "AuctionId",
     "TokenSymbol": {
         "_enum": {
-            "ACA": 0,
+            "REEF": 0,
             "AUSD": 1,
             "DOT": 2,
             "LDOT": 3,
@@ -282,13 +282,13 @@
     "AirDropCurrencyId": {
         "_enum": [
             "KAR",
-            "ACA"
+            "REEF"
         ]
     },
     "AuthoritysOriginId": {
         "_enum": [
             "Root",
-            "AcalaTreasury",
+            "ReefTreasury",
             "HonzonTreasury",
             "HomaTreasury",
             "DSWF"
@@ -358,7 +358,7 @@
             "Currencies": "Null",
             "Tokens": "Null",
             "Vesting": "Null",
-            "AcalaTreasury": "Null",
+            "ReefTreasury": "Null",
             "Utility": "Null",
             "Multisig": "Null",
             "Recovery": "Null",
@@ -382,9 +382,9 @@
             "TechnicalCommitteeMembership": "Null",
             "Authority": "DelayedOrigin",
             "ElectionsPhragmen": "Null",
-            "AcalaOracle": "Null",
+            "ReefOracle": "Null",
             "BandOracle": "Null",
-            "OperatorMembershipAcala": "Null",
+            "OperatorMembershipReef": "Null",
             "OperatorMembershipBand": "Null",
             "Auction": "Null",
             "Rewards": "Null",

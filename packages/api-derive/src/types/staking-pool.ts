@@ -1,5 +1,5 @@
 import { EraIndex } from '@polkadot/types/interfaces';
-import { ExchangeRate, CurrencyId, BlockNumber, Params, Ledger, Balance } from '@acala-network/types/interfaces';
+import { ExchangeRate, CurrencyId, BlockNumber, Params, Ledger, Balance } from '@reef-defi/types/interfaces';
 
 export interface DerivedStakingPoolConstants {
   defaultExchangeRate: ExchangeRate;

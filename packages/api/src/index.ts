@@ -1,17 +1,17 @@
 import { derive as ormlDerives } from '@open-web3/orml-api-derive';
-import { derive as acalaDerives } from '@acala-network/api-derive';
+import { derive as reefDerives } from '@reef-defi/api-derive';
 import {
-  rpc as acalaRpc,
-  types as acalaTypes,
-  typesAlias as acalaTypesAlias,
-  typesBundle as acalaTypesBundle,
-  signedExtensions as acalaSignedExtensions
-} from '@acala-network/types';
+  rpc as reefRpc,
+  types as reefTypes,
+  typesAlias as reefTypesAlias,
+  typesBundle as reefTypesBundle,
+  signedExtensions as reefSignedExtensions
+} from '@reef-defi/types';
 import { ApiOptions } from '@polkadot/api/types';
 
 export const defaultOptions: ApiOptions = {
-  types: acalaTypes,
-  rpc: acalaRpc
+  types: reefTypes,
+  rpc: reefRpc
 };
 
 export const options = ({
@@ -23,37 +23,37 @@ export const options = ({
   ...otherOptions
 }: ApiOptions = {}): ApiOptions => ({
   types: {
-    ...acalaTypes,
+    ...reefTypes,
     ...types
   },
   rpc: {
-    ...acalaRpc,
+    ...reefRpc,
     ...rpc
   },
   typesAlias: {
-    ...acalaTypesAlias,
+    ...reefTypesAlias,
     ...typesAlias
   },
   derives: {
     ...ormlDerives,
-    ...acalaDerives
+    ...reefDerives
   },
   typesBundle: {
     ...typesBundle,
     spec: {
       ...typesBundle.spec,
-      acala: {
-        ...acalaTypesBundle?.spec?.acala,
-        ...typesBundle?.spec?.acala
+      reef: {
+        ...reefTypesBundle?.spec?.reef,
+        ...typesBundle?.spec?.reef
       },
       mandala: {
-        ...acalaTypesBundle?.spec?.mandala,
+        ...reefTypesBundle?.spec?.mandala,
         ...typesBundle?.spec?.mandala
       }
     }
   },
   signedExtensions: {
-    ...acalaSignedExtensions,
+    ...reefSignedExtensions,
     ...signedExtensions
   },
   ...otherOptions

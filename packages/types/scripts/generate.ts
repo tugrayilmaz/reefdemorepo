@@ -17,7 +17,7 @@ import * as defaultDefinations from '@polkadot/types/interfaces/definitions';
 
 import * as ormlDefinations from '@open-web3/orml-types/interfaces/definitions';
 
-import * as acalaDefinations from '../src/interfaces/definitions';
+import * as reefDefinitions from '../src/interfaces/definitions';
 
 // Only keep our own modules to avoid confllicts with the one provided by polkadot.js
 // TODO: make an issue on polkadot.js
@@ -45,7 +45,7 @@ const { runtime: _runtime, ...ormlModulesDefinations } = ormlDefinations;
 const definations = {
   '@polkadot/types/interfaces': substrateDefinations,
   '@open-web3/orml-types/interfaces': ormlModulesDefinations,
-  '@acala-network/types/interfaces': acalaDefinations
+  '@reef-defi/types/interfaces': reefDefinitions
 } as any;
 
 const metadata = filterModules(
@@ -78,7 +78,7 @@ const metadata = filterModules(
   definations
 );
 
-generateTsDef(definations, 'packages/types/src/interfaces', '@acala-network/types/interfaces');
+generateTsDef(definations, 'packages/types/src/interfaces', '@reef-defi/types/interfaces');
 generateInterfaceTypes(definations, 'packages/types/src/interfaces/augment-types.ts');
 generateDefaultConsts('packages/types/src/interfaces/augment-api-consts.ts', metadata, definations);
 
