@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/sdk-homa",
-  "version": "0.7.2-7",
+  "version": "0.1.0",
   "description": "the homa sub module in Reef Chain SDK",
   "main": "index.js",
   "author": "Reef Developers",
@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/reef-defi/reef.js",
   "dependencies": {
-    "@reef-defi/sdk-core": "^0.7.2-7",
+    "@reef-defi/sdk-core": "^0.1.0",
     "lodash": "^4.17.20"
   },
   "devDependencies": {
