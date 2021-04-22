@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/sdk-swap",
-  "version": "0.1.1",
+  "version": "0.1.2-0",
   "description": "the swap sub module in Reef Chain sdk",
   "main": "index.js",
   "author": "Reef Developers",
@@ -17,7 +17,7 @@
   "dependencies": {
     "@polkadot/api": "^4.6.3-7",
     "@polkadot/types": "^4.6.3-7",
-    "@reef-defi/sdk-core": "0.1.1",
+    "@reef-defi/sdk-core": "0.1.2-0",
     "lodash": "^4.17.20"
   },
   "devDependencies": {

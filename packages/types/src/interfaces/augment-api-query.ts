@@ -3,6 +3,10 @@
 
 import type { Option, Vec, bool, u32, u64 } from '@polkadot/types';
 import type { AnyNumber, ITuple, Observable } from '@polkadot/types/types';
+import type { AuctionInfo, Price } from '@open-web3/orml-types/interfaces/traits';
+import type { AccountData, BalanceLock } from '@polkadot/types/interfaces/balances';
+import type { EraIndex } from '@polkadot/types/interfaces/staking';
+import type { Phase } from '@polkadot/types/interfaces/system';
 import type { CollateralAuctionItem } from '@reef-defi/types/interfaces/auctionManager';
 import type { RiskManagementParams } from '@reef-defi/types/interfaces/cdpEngine';
 import type { TradingPairStatus } from '@reef-defi/types/interfaces/dex';
@@ -13,10 +17,6 @@ import type { AirDropCurrencyId, AuctionId, CurrencyId, TradingPair } from '@ree
 import type { AccountId, Balance, BlockNumber } from '@reef-defi/types/interfaces/runtime';
 import type { Ledger, Params, SubAccountStatus } from '@reef-defi/types/interfaces/stakingPool';
 import type { ExchangeRate, Rate } from '@reef-defi/types/interfaces/support';
-import type { AuctionInfo, Price } from '@open-web3/orml-types/interfaces/traits';
-import type { AccountData, BalanceLock } from '@polkadot/types/interfaces/balances';
-import type { EraIndex } from '@polkadot/types/interfaces/staking';
-import type { Phase } from '@polkadot/types/interfaces/system';
 import type { ApiTypes } from '@polkadot/api/types';
 
 declare module '@polkadot/api/types/storage' {

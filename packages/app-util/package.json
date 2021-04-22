@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/app-util",
-  "version": "0.1.1",
+  "version": "0.1.2-0",
   "description": "Utilities to work with Reef Chain",
   "author": "Reef Developers",
   "main": "index.js",

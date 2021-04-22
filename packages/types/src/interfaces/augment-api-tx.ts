@@ -3,6 +3,8 @@
 
 import type { Compact, Option, Vec, bool, u32 } from '@polkadot/types';
 import type { AnyNumber } from '@polkadot/types/types';
+import type { Extrinsic } from '@polkadot/types/interfaces/extrinsics';
+import type { EraIndex } from '@polkadot/types/interfaces/staking';
 import type { ChangeBalance, ChangeOptionRate, ChangeOptionRatio } from '@reef-defi/types/interfaces/cdpEngine';
 import type { RedeemStrategy } from '@reef-defi/types/interfaces/homa';
 import type { RelaychainAccountId, SlashInfo } from '@reef-defi/types/interfaces/homaValidatorList';
@@ -11,8 +13,6 @@ import type { AirDropCurrencyId, Amount, AmountOf, AuctionId, CurrencyId, Curren
 import type { Balance, BalanceOf, BlockNumber, Call, LookupSource } from '@reef-defi/types/interfaces/runtime';
 import type { ChangeRate, ChangeRatio } from '@reef-defi/types/interfaces/stakingPool';
 import type { Rate } from '@reef-defi/types/interfaces/support';
-import type { Extrinsic } from '@polkadot/types/interfaces/extrinsics';
-import type { EraIndex } from '@polkadot/types/interfaces/staking';
 import type { ApiTypes, SubmittableExtrinsic } from '@polkadot/api/types';
 
 declare module '@polkadot/api/types/submittable' {

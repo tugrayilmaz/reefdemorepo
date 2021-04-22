@@ -3,9 +3,9 @@
 
 import type { Enum, Struct, Vec } from '@polkadot/types';
 import type { ITuple } from '@polkadot/types/types';
+import type { EraIndex } from '@polkadot/types/interfaces/staking';
 import type { AccountId, Balance } from '@reef-defi/types/interfaces/runtime';
 import type { Rate, Ratio } from '@reef-defi/types/interfaces/support';
-import type { EraIndex } from '@polkadot/types/interfaces/staking';
 
 /** @name BalanceInfo */
 export interface BalanceInfo extends Struct {
