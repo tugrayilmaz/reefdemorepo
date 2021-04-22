@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/types",
-  "version": "0.1.2-0",
+  "version": "0.1.2",
   "description": "Polkadot.js type definations for Reef Chain",
   "main": "index.js",
   "author": "Reef Developers",
@@ -21,7 +21,7 @@
     "@polkadot/api": "^4.6.3-7",
     "@polkadot/typegen": "^4.6.3-7",
     "@polkadot/types": "^4.6.3-7",
-    "@reef-defi/type-definitions": "0.1.2-0"
+    "@reef-defi/type-definitions": "0.1.2"
   },
   "devDependencies": {
     "@types/websocket": "^1.0.0",

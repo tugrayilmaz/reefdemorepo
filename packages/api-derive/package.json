@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/api-derive",
-  "version": "0.1.2-0",
+  "version": "0.1.2",
   "description": "Additional polkadot.js derives for Reef Chain",
   "main": "index.js",
   "author": "Reef Developers",
@@ -18,6 +18,6 @@
     "@babel/runtime": "^7.10.2",
     "@open-web3/orml-types": "^0.9.4-0",
     "@polkadot/api-derive": "^4.6.3-7",
-    "@reef-defi/types": "0.1.2-0"
+    "@reef-defi/types": "0.1.2"
   }
 }

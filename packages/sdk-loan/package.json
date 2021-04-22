@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/sdk-loan",
-  "version": "0.1.2-0",
+  "version": "0.1.2",
   "description": "the loan sub module in Reef Chain sdk",
   "main": "index.js",
   "author": "Reef Developers",
@@ -17,8 +17,8 @@
   "dependencies": {
     "@polkadot/api": "^4.6.3-7",
     "@polkadot/types": "^4.6.3-7",
-    "@reef-defi/api-derive": "0.1.2-0",
-    "@reef-defi/sdk-core": "0.1.2-0",
+    "@reef-defi/api-derive": "0.1.2",
+    "@reef-defi/sdk-core": "0.1.2",
     "lodash": "^4.17.20"
   },
   "devDependencies": {
