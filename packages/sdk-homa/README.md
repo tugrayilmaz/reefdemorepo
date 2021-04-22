@@ -1,1 +1,1 @@
-# @acala-network/sdk-homa
+# @reef-defi/sdk-homa

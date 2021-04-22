@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 import type { Struct, Vec } from '@polkadot/types';
-import type { AccountId, Balance } from '@acala-network/types/interfaces/runtime';
+import type { AccountId, Balance } from '@reef-defi/types/interfaces/runtime';
 import type { EraIndex } from '@polkadot/types/interfaces/staking';
 
 /** @name BondingLedger */

@@ -1,15 +1,15 @@
 {
-  "name": "@acala-network/app-util",
-  "version": "0.7.4-3",
-  "description": "Utilities to work with Acala Network",
-  "author": "Acala Developers <hello@acala.one>",
+  "name": "@reef-defi/app-util",
+  "version": "0.1.1",
+  "description": "Utilities to work with Reef Chain",
+  "author": "Reef Developers",
   "main": "index.js",
   "license": "Apache-2.0",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "repository": "https://github.com/AcalaNetwork/acala.js.git",
+  "repository": "https://github.com/reef-defi/reef.js.git",
   "dependencies": {
     "@babel/runtime": "^7.10.2",
     "bignumber.js": "^9.0.0"

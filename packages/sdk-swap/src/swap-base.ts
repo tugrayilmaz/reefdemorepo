@@ -1,8 +1,8 @@
 import { ApiPromise, ApiRx } from '@polkadot/api';
 import { Observable } from '@polkadot/x-rxjs';
 import { map } from '@polkadot/x-rxjs/operators';
-import { Token, TokenBalance, TokenPair } from '@acala-network/sdk-core';
-import { FixedPointNumber } from '@acala-network/sdk-core/fixed-point-number';
+import { Token, TokenBalance, TokenPair } from '@reef-defi/sdk-core';
+import { FixedPointNumber } from '@reef-defi/sdk-core/fixed-point-number';
 
 import { getSupplyAmount, getTargetAmount, Fee, SwapTradeMode } from './help';
 import { LiquidityPool, SwapResult } from './types';

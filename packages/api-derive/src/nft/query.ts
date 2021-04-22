@@ -3,7 +3,7 @@ import { map, tap } from '@polkadot/x-rxjs/operators';
 import { ApiInterfaceRx } from '@polkadot/api/types';
 import { Option } from '@polkadot/types';
 
-import { AccountId, ClassId, TokenInfoOf, CID, ClassInfoOf, TokenId } from '@acala-network/types/interfaces';
+import { AccountId, ClassId, TokenInfoOf, CID, ClassInfoOf, TokenId } from '@reef-defi/types/interfaces';
 
 import { memo } from '@polkadot/api-derive/util';
 

@@ -1,4 +1,4 @@
-import { Token, TokenPair } from '@acala-network/sdk-core';
+import { Token, TokenPair } from '@reef-defi/sdk-core';
 import { set } from 'lodash';
 
 export class TradeGraph {

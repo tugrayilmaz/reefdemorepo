@@ -2,8 +2,8 @@
 /* eslint-disable */
 
 import type { Enum } from '@polkadot/types';
-import type { CurrencyId } from '@acala-network/types/interfaces/primitives';
-import type { AccountId } from '@acala-network/types/interfaces/runtime';
+import type { CurrencyId } from '@reef-defi/types/interfaces/primitives';
+import type { AccountId } from '@reef-defi/types/interfaces/runtime';
 
 /** @name PoolId */
 export interface PoolId extends Enum {

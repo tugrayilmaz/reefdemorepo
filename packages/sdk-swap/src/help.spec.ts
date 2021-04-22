@@ -1,5 +1,5 @@
 import { getSupplyAmount, getTargetAmount } from './help';
-import { FixedPointNumber } from '@acala-network/sdk-core';
+import { FixedPointNumber } from '@reef-defi/sdk-core';
 
 describe('test getSupplyAmount, getTargetAmount', () => {
   const fee = {

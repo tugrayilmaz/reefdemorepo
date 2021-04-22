@@ -3,9 +3,9 @@ import { memoize } from '@polkadot/util';
 import { Memoized } from '@polkadot/util/types';
 import { BehaviorSubject, Observable, from, of } from '@polkadot/x-rxjs';
 import { switchMap, map, shareReplay, withLatestFrom } from '@polkadot/x-rxjs/operators';
-import { Balance } from '@acala-network/types/interfaces';
-import { eventMethodsFilter, Token, TokenPair, TokenSet } from '@acala-network/sdk-core';
-import { FixedPointNumber } from '@acala-network/sdk-core/fixed-point-number';
+import { Balance } from '@reef-defi/types/interfaces';
+import { eventMethodsFilter, Token, TokenPair, TokenSet } from '@reef-defi/sdk-core';
+import { FixedPointNumber } from '@reef-defi/sdk-core/fixed-point-number';
 import { ITuple } from '@polkadot/types/types';
 
 import { SwapTradeMode } from './help';

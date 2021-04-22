@@ -3,16 +3,16 @@
 
 import type { Option, Vec, bool, u32, u64 } from '@polkadot/types';
 import type { AnyNumber, ITuple, Observable } from '@polkadot/types/types';
-import type { CollateralAuctionItem } from '@acala-network/types/interfaces/auctionManager';
-import type { RiskManagementParams } from '@acala-network/types/interfaces/cdpEngine';
-import type { TradingPairStatus } from '@acala-network/types/interfaces/dex';
-import type { Guarantee, RelaychainAccountId, ValidatorBacking } from '@acala-network/types/interfaces/homaValidatorList';
-import type { Position } from '@acala-network/types/interfaces/loans';
-import type { BondingLedger, NomineeId } from '@acala-network/types/interfaces/nomineesElection';
-import type { AirDropCurrencyId, AuctionId, CurrencyId, TradingPair } from '@acala-network/types/interfaces/primitives';
-import type { AccountId, Balance, BlockNumber } from '@acala-network/types/interfaces/runtime';
-import type { Ledger, Params, SubAccountStatus } from '@acala-network/types/interfaces/stakingPool';
-import type { ExchangeRate, Rate } from '@acala-network/types/interfaces/support';
+import type { CollateralAuctionItem } from '@reef-defi/types/interfaces/auctionManager';
+import type { RiskManagementParams } from '@reef-defi/types/interfaces/cdpEngine';
+import type { TradingPairStatus } from '@reef-defi/types/interfaces/dex';
+import type { Guarantee, RelaychainAccountId, ValidatorBacking } from '@reef-defi/types/interfaces/homaValidatorList';
+import type { Position } from '@reef-defi/types/interfaces/loans';
+import type { BondingLedger, NomineeId } from '@reef-defi/types/interfaces/nomineesElection';
+import type { AirDropCurrencyId, AuctionId, CurrencyId, TradingPair } from '@reef-defi/types/interfaces/primitives';
+import type { AccountId, Balance, BlockNumber } from '@reef-defi/types/interfaces/runtime';
+import type { Ledger, Params, SubAccountStatus } from '@reef-defi/types/interfaces/stakingPool';
+import type { ExchangeRate, Rate } from '@reef-defi/types/interfaces/support';
 import type { AuctionInfo, Price } from '@open-web3/orml-types/interfaces/traits';
 import type { AccountData, BalanceLock } from '@polkadot/types/interfaces/balances';
 import type { EraIndex } from '@polkadot/types/interfaces/staking';

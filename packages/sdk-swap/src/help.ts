@@ -1,4 +1,4 @@
-import { FixedPointNumber } from '@acala-network/sdk-core/fixed-point-number';
+import { FixedPointNumber } from '@reef-defi/sdk-core/fixed-point-number';
 
 export type SwapTradeMode = 'EXACT_INPUT' | 'EXACT_OUTPUT';
 

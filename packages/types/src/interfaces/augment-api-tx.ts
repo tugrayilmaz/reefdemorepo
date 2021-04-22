@@ -3,14 +3,14 @@
 
 import type { Compact, Option, Vec, bool, u32 } from '@polkadot/types';
 import type { AnyNumber } from '@polkadot/types/types';
-import type { ChangeBalance, ChangeOptionRate, ChangeOptionRatio } from '@acala-network/types/interfaces/cdpEngine';
-import type { RedeemStrategy } from '@acala-network/types/interfaces/homa';
-import type { RelaychainAccountId, SlashInfo } from '@acala-network/types/interfaces/homaValidatorList';
-import type { NomineeId } from '@acala-network/types/interfaces/nomineesElection';
-import type { AirDropCurrencyId, Amount, AmountOf, AuctionId, CurrencyId, CurrencyIdOf } from '@acala-network/types/interfaces/primitives';
-import type { Balance, BalanceOf, BlockNumber, Call, LookupSource } from '@acala-network/types/interfaces/runtime';
-import type { ChangeRate, ChangeRatio } from '@acala-network/types/interfaces/stakingPool';
-import type { Rate } from '@acala-network/types/interfaces/support';
+import type { ChangeBalance, ChangeOptionRate, ChangeOptionRatio } from '@reef-defi/types/interfaces/cdpEngine';
+import type { RedeemStrategy } from '@reef-defi/types/interfaces/homa';
+import type { RelaychainAccountId, SlashInfo } from '@reef-defi/types/interfaces/homaValidatorList';
+import type { NomineeId } from '@reef-defi/types/interfaces/nomineesElection';
+import type { AirDropCurrencyId, Amount, AmountOf, AuctionId, CurrencyId, CurrencyIdOf } from '@reef-defi/types/interfaces/primitives';
+import type { Balance, BalanceOf, BlockNumber, Call, LookupSource } from '@reef-defi/types/interfaces/runtime';
+import type { ChangeRate, ChangeRatio } from '@reef-defi/types/interfaces/stakingPool';
+import type { Rate } from '@reef-defi/types/interfaces/support';
 import type { Extrinsic } from '@polkadot/types/interfaces/extrinsics';
 import type { EraIndex } from '@polkadot/types/interfaces/staking';
 import type { ApiTypes, SubmittableExtrinsic } from '@polkadot/api/types';

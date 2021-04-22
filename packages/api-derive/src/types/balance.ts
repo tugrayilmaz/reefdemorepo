@@ -1,4 +1,4 @@
-import { Balance, CurrencyId } from '@acala-network/types/interfaces';
+import { Balance, CurrencyId } from '@reef-defi/types/interfaces';
 
 export interface DerivedBalance {
   currency: CurrencyId | string;

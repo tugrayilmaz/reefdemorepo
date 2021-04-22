@@ -4,12 +4,12 @@
 import type { Metadata } from '@polkadot/metadata';
 import type { Bytes, HashMap, Json, Null, Option, Raw, StorageKey, Text, U256, U64, Vec, bool, u32, u64 } from '@polkadot/types';
 import type { AnyNumber, Codec, IExtrinsic, ITuple, Observable } from '@polkadot/types/types';
-import type { BalanceRequest, BalanceWrapper } from '@acala-network/types/interfaces/dex';
-import type { CallRequest, EstimateResourcesResponse } from '@acala-network/types/interfaces/evm';
-import type { CurrencyId } from '@acala-network/types/interfaces/primitives';
-import type { AccountId, BlockNumber, H160, H256, H64, Hash, Header, Index, Justification, KeyValue, OracleKey, SignedBlock, StorageData } from '@acala-network/types/interfaces/runtime';
-import type { BalanceInfo } from '@acala-network/types/interfaces/stakingPool';
-import type { ExchangeRate } from '@acala-network/types/interfaces/support';
+import type { BalanceRequest, BalanceWrapper } from '@reef-defi/types/interfaces/dex';
+import type { CallRequest, EstimateResourcesResponse } from '@reef-defi/types/interfaces/evm';
+import type { CurrencyId } from '@reef-defi/types/interfaces/primitives';
+import type { AccountId, BlockNumber, H160, H256, H64, Hash, Header, Index, Justification, KeyValue, OracleKey, SignedBlock, StorageData } from '@reef-defi/types/interfaces/runtime';
+import type { BalanceInfo } from '@reef-defi/types/interfaces/stakingPool';
+import type { ExchangeRate } from '@reef-defi/types/interfaces/support';
 import type { RpcDataProviderId, TimestampedValue } from '@open-web3/orml-types/interfaces/oracle';
 import type { ExtrinsicOrHash, ExtrinsicStatus } from '@polkadot/types/interfaces/author';
 import type { EpochAuthorship } from '@polkadot/types/interfaces/babe';

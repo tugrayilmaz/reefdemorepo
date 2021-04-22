@@ -1,4 +1,4 @@
-import { types, typesBundleForPolkadot, rpc } from '@acala-network/type-definitions';
+import { types, typesBundleForPolkadot, rpc } from '@reef-defi/type-definitions';
 import fs from 'fs';
 
 fs.writeFileSync('packages/type-definitions/src/json/types.json', JSON.stringify(types, null, 4));

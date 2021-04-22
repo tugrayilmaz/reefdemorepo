@@ -3,8 +3,8 @@
 
 import type { Enum, Struct, Vec } from '@polkadot/types';
 import type { ITuple } from '@polkadot/types/types';
-import type { AccountId, Balance } from '@acala-network/types/interfaces/runtime';
-import type { Rate, Ratio } from '@acala-network/types/interfaces/support';
+import type { AccountId, Balance } from '@reef-defi/types/interfaces/runtime';
+import type { Rate, Ratio } from '@reef-defi/types/interfaces/support';
 import type { EraIndex } from '@polkadot/types/interfaces/staking';
 
 /** @name BalanceInfo */

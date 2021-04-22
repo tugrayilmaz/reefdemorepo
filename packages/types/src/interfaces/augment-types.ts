@@ -2,22 +2,22 @@
 /* eslint-disable */
 
 import type { BitVec, Bool, Bytes, Compact, Data, DoNotConstruct, I128, I16, I256, I32, I64, I8, Json, Null, Option, Raw, StorageKey, Text, Type, U128, U16, U256, U32, U64, U8, USize, Vec, bool, i128, i16, i256, i32, i64, i8, u128, u16, u256, u32, u64, u8, usize } from '@polkadot/types';
-import type { PalletBalanceOf } from '@acala-network/types/interfaces/accounts';
-import type { CollateralAuctionItem, DebitAuctionItem, SurplusAuctionItem } from '@acala-network/types/interfaces/auctionManager';
-import type { ChangeBalance, ChangeOptionRate, ChangeOptionRatio, LiquidationStrategy, OptionRate, OptionRatio, RiskManagementParams } from '@acala-network/types/interfaces/cdpEngine';
-import type { BalanceRequest, BalanceWrapper, TradingPairProvisionParameters, TradingPairStatus } from '@acala-network/types/interfaces/dex';
-import type { CallRequest, CodeInfo, Erc20Info, EstimateResourcesResponse, EvmAccountInfo, EvmAddress, EvmContractInfo } from '@acala-network/types/interfaces/evm';
-import type { RedeemStrategy } from '@acala-network/types/interfaces/homa';
-import type { Guarantee, RelaychainAccountId, SlashInfo, ValidatorBacking } from '@acala-network/types/interfaces/homaValidatorList';
-import type { PoolId } from '@acala-network/types/interfaces/incentives';
-import type { Position } from '@acala-network/types/interfaces/loans';
-import type { CID, ClassData, ClassId, ClassIdOf, ClassInfoOf, Properties, TokenData, TokenId, TokenIdOf, TokenInfoOf } from '@acala-network/types/interfaces/nft';
-import type { BondingLedger, HomaUnlockChunk, NomineeId } from '@acala-network/types/interfaces/nomineesElection';
-import type { AirDropCurrencyId, Amount, AmountOf, AuctionId, AuctionIdOf, AuthoritysOriginId, CurrencyId, CurrencyIdOf, DexShare, NFTBalance, TokenSymbol, TradingPair } from '@acala-network/types/interfaces/primitives';
-import type { DestAddress, PublicKey } from '@acala-network/types/interfaces/renvmBridge';
-import type { AccountId, AccountIdOf, AccountIndex, Address, AsOriginId, AssetId, Balance, BalanceOf, Block, BlockNumber, Call, CallHash, CallHashOf, ChangesTrieConfiguration, CodecHash, Consensus, ConsensusEngineId, Digest, DigestItem, EncodedJustification, ExtrinsicsWeight, Fixed128, Fixed64, FixedI128, FixedI64, FixedU128, FixedU64, H1024, H128, H160, H2048, H256, H512, H64, Hash, Header, I32F32, Index, IndicesLookupSource, Justification, Justifications, KeyTypeId, KeyValue, LockIdentifier, LookupSource, LookupTarget, ModuleId, Moment, MultiAddress, MultiSigner, OpaqueCall, OracleKey, OracleValue, Origin, OriginCaller, PalletId, PalletVersion, PalletsOrigin, Pays, PerU16, Perbill, Percent, Permill, Perquintill, Phantom, PhantomData, PreRuntime, Releases, RuntimeDbWeight, Seal, SealV0, SignedBlock, SignedBlockWithJustification, SignedBlockWithJustifications, Slot, StorageData, StorageProof, TransactionPriority, U32F32, ValidatorId, ValidatorIdOf, Weight, WeightMultiplier } from '@acala-network/types/interfaces/runtime';
-import type { BalanceInfo, ChangeRate, ChangeRatio, Ledger, Params, PolkadotAccountId, PolkadotAccountIdOf, StakingPoolPhase, SubAccountStatus } from '@acala-network/types/interfaces/stakingPool';
-import type { ExchangeRate, Rate, Ratio } from '@acala-network/types/interfaces/support';
+import type { PalletBalanceOf } from '@reef-defi/types/interfaces/accounts';
+import type { CollateralAuctionItem, DebitAuctionItem, SurplusAuctionItem } from '@reef-defi/types/interfaces/auctionManager';
+import type { ChangeBalance, ChangeOptionRate, ChangeOptionRatio, LiquidationStrategy, OptionRate, OptionRatio, RiskManagementParams } from '@reef-defi/types/interfaces/cdpEngine';
+import type { BalanceRequest, BalanceWrapper, TradingPairProvisionParameters, TradingPairStatus } from '@reef-defi/types/interfaces/dex';
+import type { CallRequest, CodeInfo, Erc20Info, EstimateResourcesResponse, EvmAccountInfo, EvmAddress, EvmContractInfo } from '@reef-defi/types/interfaces/evm';
+import type { RedeemStrategy } from '@reef-defi/types/interfaces/homa';
+import type { Guarantee, RelaychainAccountId, SlashInfo, ValidatorBacking } from '@reef-defi/types/interfaces/homaValidatorList';
+import type { PoolId } from '@reef-defi/types/interfaces/incentives';
+import type { Position } from '@reef-defi/types/interfaces/loans';
+import type { CID, ClassData, ClassId, ClassIdOf, ClassInfoOf, Properties, TokenData, TokenId, TokenIdOf, TokenInfoOf } from '@reef-defi/types/interfaces/nft';
+import type { BondingLedger, HomaUnlockChunk, NomineeId } from '@reef-defi/types/interfaces/nomineesElection';
+import type { AirDropCurrencyId, Amount, AmountOf, AuctionId, AuctionIdOf, AuthoritysOriginId, CurrencyId, CurrencyIdOf, DexShare, NFTBalance, TokenSymbol, TradingPair } from '@reef-defi/types/interfaces/primitives';
+import type { DestAddress, PublicKey } from '@reef-defi/types/interfaces/renvmBridge';
+import type { AccountId, AccountIdOf, AccountIndex, Address, AsOriginId, AssetId, Balance, BalanceOf, Block, BlockNumber, Call, CallHash, CallHashOf, ChangesTrieConfiguration, CodecHash, Consensus, ConsensusEngineId, Digest, DigestItem, EncodedJustification, ExtrinsicsWeight, Fixed128, Fixed64, FixedI128, FixedI64, FixedU128, FixedU64, H1024, H128, H160, H2048, H256, H512, H64, Hash, Header, I32F32, Index, IndicesLookupSource, Justification, Justifications, KeyTypeId, KeyValue, LockIdentifier, LookupSource, LookupTarget, ModuleId, Moment, MultiAddress, MultiSigner, OpaqueCall, OracleKey, OracleValue, Origin, OriginCaller, PalletId, PalletVersion, PalletsOrigin, Pays, PerU16, Perbill, Percent, Permill, Perquintill, Phantom, PhantomData, PreRuntime, Releases, RuntimeDbWeight, Seal, SealV0, SignedBlock, SignedBlockWithJustification, SignedBlockWithJustifications, Slot, StorageData, StorageProof, TransactionPriority, U32F32, ValidatorId, ValidatorIdOf, Weight, WeightMultiplier } from '@reef-defi/types/interfaces/runtime';
+import type { BalanceInfo, ChangeRate, ChangeRatio, Ledger, Params, PolkadotAccountId, PolkadotAccountIdOf, StakingPoolPhase, SubAccountStatus } from '@reef-defi/types/interfaces/stakingPool';
+import type { ExchangeRate, Rate, Ratio } from '@reef-defi/types/interfaces/support';
 import type { CallOf, DelayedOrigin, DispatchTime, ScheduleTaskIndex } from '@open-web3/orml-types/interfaces/authority';
 import type { GraduallyUpdate, StorageKeyBytes, StorageValue, StorageValueBytes } from '@open-web3/orml-types/interfaces/graduallyUpdates';
 import type { DataProviderId, OrderedSet, RpcDataProviderId, TimestampedValue, TimestampedValueOf } from '@open-web3/orml-types/interfaces/oracle';

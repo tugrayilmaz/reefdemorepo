@@ -2,7 +2,7 @@ import { Observable, combineLatest } from '@polkadot/x-rxjs';
 import { map } from '@polkadot/x-rxjs/operators';
 import { ApiInterfaceRx } from '@polkadot/api/types';
 
-import { CurrencyId, AccountId, Position } from '@acala-network/types/interfaces';
+import { CurrencyId, AccountId, Position } from '@reef-defi/types/interfaces';
 import { memo } from '@polkadot/api-derive/util';
 
 import { DerivedUserLoan } from '../types/loan';

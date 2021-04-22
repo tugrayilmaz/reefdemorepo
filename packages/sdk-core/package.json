@@ -1,24 +1,24 @@
 {
-  "name": "@acala-network/sdk-core",
-  "version": "0.7.4-3",
-  "description": "the core of acala network sdk",
+  "name": "@reef-defi/sdk-core",
+  "version": "0.1.1",
+  "description": "the core of Reef Chain sdk",
   "main": "index.js",
-  "author": "Acala Developers <hello@acala.network>",
+  "author": "Reef Developers",
   "license": "Apache-2.0",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "repository": "https://github.com/AcalaNetwork/acala.js.git",
+  "repository": "https://github.com/reef-defi/reef.js.git",
   "bugs": {
-    "url": "https://github.com/AcalaNetwork/acala.js/issues"
+    "url": "https://github.com/reef-defi/reef.js/issues"
   },
-  "homepage": "https://github.com/AcalaNetwork/acala.js",
+  "homepage": "https://github.com/reef-defi/reef.js",
   "dependencies": {
-    "@acala-network/api": "0.7.4-3",
-    "@acala-network/type-definitions": "0.7.4-3",
     "@polkadot/api": "^4.6.3-7",
     "@polkadot/types": "^4.6.3-7",
+    "@reef-defi/api": "0.1.1",
+    "@reef-defi/type-definitions": "0.1.1",
     "@types/events": "^3.0.0",
     "bignumber.js": "^9.0.0",
     "events": "^3.2.0",
