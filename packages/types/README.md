@@ -1,3 +1,3 @@
-# @acala-network/types
+# @reef-defi/types
 
-Polkadot.js type definations for Acala Network
+Polkadot.js type definations for Reef Chain

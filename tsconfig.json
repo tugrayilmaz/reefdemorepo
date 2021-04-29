@@ -9,46 +9,46 @@
     "module": "CommonJS",
     "baseUrl": ".",
     "paths": {
-      "@acala-network/api": [
+      "@reef-defi/api": [
         "packages/api/src"
       ],
-      "@acala-network/api/*": [
+      "@reef-defi/api/*": [
         "packages/api/src/*"
       ],
-      "@acala-network/types": [
+      "@reef-defi/types": [
         "packages/types/src"
       ],
-      "@acala-network/types/*": [
+      "@reef-defi/types/*": [
         "packages/types/src/*"
       ],
-      "@acala-network/api-derive": [
+      "@reef-defi/api-derive": [
         "packages/api-derive/src"
       ],
-      "@acala-network/api-derive/*": [
+      "@reef-defi/api-derive/*": [
         "packages/api-derive/src/*"
       ],
-      "@acala-network/type-definitions": [
+      "@reef-defi/type-definitions": [
         "packages/type-definitions/src"
       ],
-      "@acala-network/type-definitions/*": [
+      "@reef-defi/type-definitions/*": [
         "packages/type-definitions/src/*"
       ],
-      "@acala-network/sdk-core": [
+      "@reef-defi/sdk-core": [
         "packages/sdk-core/src"
       ],
-      "@acala-network/sdk-core/*": [
+      "@reef-defi/sdk-core/*": [
         "packages/sdk-core/src/*"
       ],
-      "@acala-network/sdk-swap": [
+      "@reef-defi/sdk-swap": [
         "packages/sdk-swap/src"
       ],
-      "@acala-network/sdk-swap/*": [
+      "@reef-defi/sdk-swap/*": [
         "packages/sdk-swap/src/*"
       ],
-      "@acala-network/sdk-loan": [
+      "@reef-defi/sdk-loan": [
         "packages/sdk-loan/src"
       ],
-      "@acala-network/sdk-loan/*": [
+      "@reef-defi/sdk-loan/*": [
         "packages/sdk-loan/src/*"
       ],
     },

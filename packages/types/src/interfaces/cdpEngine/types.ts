@@ -2,8 +2,8 @@
 /* eslint-disable */
 
 import type { Enum, Option, Struct } from '@polkadot/types';
-import type { Balance } from '@acala-network/types/interfaces/runtime';
-import type { Rate, Ratio } from '@acala-network/types/interfaces/support';
+import type { Balance } from '@reef-defi/types/interfaces/runtime';
+import type { Rate, Ratio } from '@reef-defi/types/interfaces/support';
 
 /** @name ChangeBalance */
 export interface ChangeBalance extends Enum {

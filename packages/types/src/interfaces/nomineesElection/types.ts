@@ -2,8 +2,8 @@
 /* eslint-disable */
 
 import type { Compact, Struct, Vec } from '@polkadot/types';
-import type { Balance } from '@acala-network/types/interfaces/runtime';
 import type { EraIndex, UnlockChunk } from '@polkadot/types/interfaces/staking';
+import type { Balance } from '@reef-defi/types/interfaces/runtime';
 
 /** @name BondingLedger */
 export interface BondingLedger extends Struct {

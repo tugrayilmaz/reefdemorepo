@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 import type { Struct } from '@polkadot/types';
-import type { AccountId, Balance } from '@acala-network/types/interfaces/runtime';
+import type { AccountId, Balance } from '@reef-defi/types/interfaces/runtime';
 
 /** @name RelaychainAccountId */
 export interface RelaychainAccountId extends AccountId {}

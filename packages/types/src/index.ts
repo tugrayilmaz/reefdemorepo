@@ -4,7 +4,7 @@ import {
   typesAlias as acalaTypeAlias,
   rpc as acalaRpc,
   signedExtensions as acalaSignedExtensions
-} from '@acala-network/type-definitions';
+} from '@reef-defi/type-definitions';
 import {
   OverrideBundleType,
   OverrideModuleType,

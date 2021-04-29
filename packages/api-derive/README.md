@@ -1,3 +1,3 @@
-# @acala-network/api-derive
+# @reef-defi/api-derive
 
-Additional polkadot.js derives for Acala Network
+Additional polkadot.js derives for Reef Chain

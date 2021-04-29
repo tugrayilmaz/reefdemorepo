@@ -3,7 +3,7 @@
 
 import type { Enum, i128, u128, u32 } from '@polkadot/types';
 import type { ITuple } from '@polkadot/types/types';
-import type { EvmAddress } from '@acala-network/types/interfaces/evm';
+import type { EvmAddress } from '@reef-defi/types/interfaces/evm';
 
 /** @name AirDropCurrencyId */
 export interface AirDropCurrencyId extends Enum {

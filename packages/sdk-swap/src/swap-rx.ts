@@ -1,9 +1,9 @@
 import { ApiRx } from '@polkadot/api';
 import { Observable, from } from 'rxjs';
 import { filter, switchMap, startWith, map, shareReplay } from 'rxjs/operators';
-import { Balance, TradingPairStatus } from '@acala-network/types/interfaces';
-import { eventMethodsFilter, mockEventRecord, Token, TokenBalance, TokenPair, TokenSet } from '@acala-network/sdk-core';
-import { FixedPointNumber } from '@acala-network/sdk-core/fixed-point-number';
+import { Balance, TradingPairStatus } from '@reef-defi/types/interfaces';
+import { eventMethodsFilter, mockEventRecord, Token, TokenBalance, TokenPair, TokenSet } from '@reef-defi/sdk-core';
+import { FixedPointNumber } from '@reef-defi/sdk-core/fixed-point-number';
 import { ITuple } from '@polkadot/types/types';
 
 import { SwapTradeMode } from './help';

@@ -1,1 +1,1 @@
-# @acala-network/sdk-core
+# @reef-defi/sdk-core

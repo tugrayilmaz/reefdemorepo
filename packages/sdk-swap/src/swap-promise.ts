@@ -1,9 +1,9 @@
 import { ApiPromise } from '@polkadot/api';
 import { BehaviorSubject, Observable, from } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
-import { Balance } from '@acala-network/types/interfaces';
-import { eventMethodsFilter, Token, TokenBalance, TokenPair, TokenSet } from '@acala-network/sdk-core';
-import { FixedPointNumber } from '@acala-network/sdk-core/fixed-point-number';
+import { Balance } from '@reef-defi/types/interfaces';
+import { eventMethodsFilter, Token, TokenBalance, TokenPair, TokenSet } from '@reef-defi/sdk-core';
+import { FixedPointNumber } from '@reef-defi/sdk-core/fixed-point-number';
 import { ITuple } from '@polkadot/types/types';
 
 import { SwapTradeMode } from './help';

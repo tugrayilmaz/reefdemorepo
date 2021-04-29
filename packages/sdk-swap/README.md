@@ -1,14 +1,14 @@
-# @acala-network/sdk-swap
+# @reef-defi/sdk-swap
 
 ```bash
-npm install @acala-network/sdk-core @acala-network/sdk-swap
+npm install @reef-defi/sdk-core @reef-defi/sdk-swap
 ```
 
 ```js
 import { ApiPromise, WsProvider } from '@polkadot/api';
-import { options } from '@acala-network/api';
-import { Token, FixedPointNumber, getPresetToken } from '@acala-network/sdk-core';
-import { SwapTrade } from '@acala-network/sdk-swap';
+import { options } from '@reef-defi/api';
+import { Token, FixedPointNumber, getPresetToken } from '@reef-defi/sdk-core';
+import { SwapTrade } from '@reef-defi/sdk-swap';
 
 const provider = new WsProvider('ws://localhost:9944');
 const api = ApiPromise.create(options({ provider }));

@@ -1,5 +1,5 @@
 import { ApiPromise, ApiRx } from '@polkadot/api';
-import { CurrencyId } from '@acala-network/types/interfaces';
+import { CurrencyId } from '@reef-defi/types/interfaces';
 import { assert } from '@polkadot/util';
 
 import { Token } from './token';

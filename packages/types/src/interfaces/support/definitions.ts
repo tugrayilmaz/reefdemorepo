@@ -1,4 +1,4 @@
 import { Definitions } from '@polkadot/types/types';
-import support from '@acala-network/type-definitions/support';
+import support from '@reef-defi/type-definitions/support';
 
 export default support as Definitions;

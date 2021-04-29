@@ -1,5 +1,5 @@
-import { Token } from '@acala-network/sdk-core/token';
-import { CurrencyId, TradingPair } from '@acala-network/types/interfaces';
+import { Token } from '@reef-defi/sdk-core/token';
+import { CurrencyId, TradingPair } from '@reef-defi/types/interfaces';
 import { ApiPromise, ApiRx } from '@polkadot/api';
 import { assert } from '@polkadot/util';
 import { DexShare } from './dex-share';

@@ -1,4 +1,4 @@
-import { FixedPointNumber } from '@acala-network/sdk-core/fixed-point-number';
+import { FixedPointNumber } from '@reef-defi/sdk-core/fixed-point-number';
 import { getFee } from './help';
 
 interface StakingPoolLedgerData {

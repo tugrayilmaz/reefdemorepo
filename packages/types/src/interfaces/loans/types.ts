@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 import type { Struct } from '@polkadot/types';
-import type { Balance } from '@acala-network/types/interfaces/runtime';
+import type { Balance } from '@reef-defi/types/interfaces/runtime';
 
 /** @name Position */
 export interface Position extends Struct {
