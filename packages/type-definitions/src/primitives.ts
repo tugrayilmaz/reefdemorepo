@@ -21,10 +21,8 @@ export default {
     },
     CurrencyIdOf: 'CurrencyId',
     AuthoritysOriginId: {
-        "_enum": [
-            "Root"
-        ]
+      _enum: ['Root']
     },
-    TradingPair: '(CurrencyId,  CurrencyId)',
+    TradingPair: '(CurrencyId,  CurrencyId)'
   }
 };

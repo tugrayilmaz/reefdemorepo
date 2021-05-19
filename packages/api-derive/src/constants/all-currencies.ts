@@ -25,7 +25,6 @@ export function nativeCurrencyId(instanceId: string, api: ApiInterfaceRx): () =>
   });
 }
 
-
 /**
  * @name stakingCurrencyId
  * @returns staking currencyId in staking pool

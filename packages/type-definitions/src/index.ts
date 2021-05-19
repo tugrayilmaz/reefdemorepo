@@ -77,7 +77,6 @@ const additionalOverride = {
       Sudo: 'Null',
       TransactionPayment: 'Null'
     }
-
   }
 };
 
@@ -88,7 +87,7 @@ const acalaDefs = {
   incentives,
   primitives,
   runtime,
-  support,
+  support
 };
 
 export const types = {

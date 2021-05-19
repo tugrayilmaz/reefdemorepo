@@ -8,12 +8,12 @@ export default {
     },
     Era: {
       index: 'u32',
-      start: 'BlockNumber',
+      start: 'BlockNumber'
     },
     LockDuration: {
       OneMonth: 0,
       OneYear: 1,
       TenYears: 2
-    },
+    }
   }
 };
