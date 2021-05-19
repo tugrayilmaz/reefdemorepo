@@ -2,7 +2,7 @@
 /* eslint-disable */
 
 import type { Metadata } from '@polkadot/metadata';
-import type { Bytes, HashMap, Json, Null, Option, Raw, StorageKey, Text, U256, U64, Vec, bool, u128, u32, u64 } from '@polkadot/types';
+import type { Bytes, HashMap, Json, Null, Option, Raw, StorageKey, Text, U256, U64, Vec, bool, u32, u64 } from '@polkadot/types';
 import type { AnyNumber, Codec, IExtrinsic, ITuple, Observable } from '@polkadot/types/types';
 import type { RpcDataProviderId, TimestampedValue } from '@open-web3/orml-types/interfaces/oracle';
 import type { ExtrinsicOrHash, ExtrinsicStatus } from '@polkadot/types/interfaces/author';
@@ -23,7 +23,7 @@ import type { RpcMethods } from '@polkadot/types/interfaces/rpc';
 import type { ReadProof, RuntimeVersion } from '@polkadot/types/interfaces/state';
 import type { ApplyExtrinsicResult, ChainProperties, ChainType, Health, NetworkState, NodeRole, PeerInfo, SyncState } from '@polkadot/types/interfaces/system';
 import type { BalanceRequest, BalanceWrapper } from '@reef-defi/types/interfaces/dex';
-import type { CallRequest } from '@reef-defi/types/interfaces/evm';
+import type { CallRequest, EstimateResourcesResponse } from '@reef-defi/types/interfaces/evm';
 import type { CurrencyId } from '@reef-defi/types/interfaces/primitives';
 import type { AccountId, BlockNumber, H160, H256, H64, Hash, Header, Index, Justification, KeyValue, OracleKey, SignedBlock, StorageData } from '@reef-defi/types/interfaces/runtime';
 import type { BalanceInfo } from '@reef-defi/types/interfaces/stakingPool';
@@ -331,9 +331,9 @@ declare module '@polkadot/rpc-core/types.jsonrpc' {
        **/
       call: AugmentedRpc<(data: CallRequest | { from?: any; to?: any; gasLimit?: any; storageLimit?: any; value?: any; data?: any } | string | Uint8Array, at?: BlockHash | string | Uint8Array) => Observable<Raw>>;
       /**
-       * eth estimateGas
+       * eth estimateResources
        **/
-      estimateGas: AugmentedRpc<(data: CallRequest | { from?: any; to?: any; gasLimit?: any; storageLimit?: any; value?: any; data?: any } | string | Uint8Array, at?: BlockHash | string | Uint8Array) => Observable<u128>>;
+      estimateResources: AugmentedRpc<(from: H160 | string | Uint8Array, unsignedExtrinsic: Bytes | string | Uint8Array, at?: BlockHash | string | Uint8Array) => Observable<EstimateResourcesResponse>>;
     };
     grandpa: {
       /**
