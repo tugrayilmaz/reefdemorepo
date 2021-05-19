@@ -9,88 +9,16 @@ interface TokenConfigData {
 
 const config: TokenConfigData[] = [
   {
-    chain: 'acala',
-    name: 'ACA',
-    symbol: 'ACA',
-    decimal: 13
+    chain: 'maldives',
+    name: "REEF",
+    symbol: "REEF",
+    decimal: 18,
   },
   {
-    chain: 'acala',
-    name: 'aUSD',
-    symbol: 'AUSD',
-    decimal: 12
-  },
-  {
-    chain: 'polka',
-    name: 'DOT',
-    symbol: 'DOT',
-    decimal: 10
-  },
-  {
-    chain: 'acala',
-    name: 'LDOT',
-    symbol: 'LDOT',
-    decimal: 10
-  },
-  {
-    chain: 'unknown',
-    name: 'XBTC',
-    symbol: 'XBTC',
-    decimal: 8
-  },
-  {
-    chain: 'acala',
-    name: 'renBTC',
-    symbol: 'RENBTC',
-    decimal: 8
-  },
-  {
-    chain: 'polkabtc',
-    name: 'polkaBTC',
-    symbol: 'POLKABTC',
-    decimal: 8
-  },
-  {
-    chain: 'unknown',
-    name: 'PLM',
-    symbol: 'PLM',
-    decimal: 8
-  },
-  {
-    chain: 'phala',
-    name: 'PHA',
-    symbol: 'PHA',
-    decimal: 8
-  },
-  {
-    chain: 'karura',
-    name: 'KAR',
-    symbol: 'KAR',
-    decimal: 12
-  },
-  {
-    chain: 'karura',
-    name: 'kSUD',
-    symbol: 'KUSD',
-    decimal: 12
-  },
-  {
-    chain: 'kusama',
-    name: 'KSM',
-    symbol: 'KSM',
-    decimal: 12
-  },
-  {
-    chain: 'karura',
-    name: 'LKSM',
-    symbol: 'LKSM',
-    decimal: 12
-  },
-  {
-    chain: 'unknown',
-    name: 'SDN',
-    symbol: 'SDN',
-    decimal: 18
+    chain: 'maldives',
+    name: "Reef Dollar",
+    symbol: "RUSD",
+    decimal: 18,
   }
 ];
 

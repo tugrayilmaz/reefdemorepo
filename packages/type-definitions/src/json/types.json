@@ -20,13 +20,7 @@
     "StorageKeyBytes": "Vec<u8>",
     "StorageValueBytes": "Vec<u8>",
     "RpcDataProviderId": "Text",
-    "DataProviderId": {
-        "_enum": [
-            "Aggregated",
-            "Acala",
-            "Band"
-        ]
-    },
+    "DataProviderId": "u8",
     "TimestampedValue": {
         "value": "OracleValue",
         "timestamp": "Moment"
@@ -80,76 +74,6 @@
     },
     "OracleValue": "Price",
     "PalletBalanceOf": "Balance",
-    "CollateralAuctionItem": {
-        "refundRecipient": "AccountId",
-        "currencyId": "CurrencyId",
-        "initialAmount": "Compact<Balance>",
-        "amount": "Compact<Balance>",
-        "target": "Compact<Balance>",
-        "startTime": "BlockNumber"
-    },
-    "DebitAuctionItem": {
-        "initialAmount": "Compact<Balance>",
-        "amount": "Compact<Balance>",
-        "fix": "Compact<Balance>",
-        "startTime": "BlockNumber"
-    },
-    "SurplusAuctionItem": {
-        "amount": "Compact<Balance>",
-        "startTime": "BlockNumber"
-    },
-    "LiquidationStrategy": {
-        "_enum": [
-            "Auction",
-            "Exchange"
-        ]
-    },
-    "OptionRate": "Option<Rate>",
-    "OptionRatio": "Option<Ratio>",
-    "ChangeOptionRate": {
-        "_enum": {
-            "NoChange": "Null",
-            "NewValue": "OptionRate"
-        }
-    },
-    "ChangeOptionRatio": {
-        "_enum": {
-            "NoChange": "Null",
-            "NewValue": "OptionRatio"
-        }
-    },
-    "ChangeBalance": {
-        "_enum": {
-            "NoChange": "Null",
-            "NewValue": "Balance"
-        }
-    },
-    "RiskManagementParams": {
-        "maximumTotalDebitValue": "Balance",
-        "stabilityFee": "Option<Rate>",
-        "liquidationRatio": "Option<Rate>",
-        "liquidationPenalty": "Option<Rate>",
-        "requiredCollateralRatio": "Option<Rate>"
-    },
-    "TradingPairProvisionParameters": {
-        "minContribution": "(Balance, Balance)",
-        "targetProvision": "(Balance, Balance)",
-        "accumulatedProvision": "(Balance, Balance)",
-        "notBefore": "BlockNumber"
-    },
-    "BalanceWrapper": {
-        "amount": "Balance"
-    },
-    "BalanceRequest": {
-        "amount": "Balance"
-    },
-    "TradingPairStatus": {
-        "_enum": {
-            "NotEnabled": "Null",
-            "Provisioning": "TradingPairProvisionParameters",
-            "Enabled": "Null"
-        }
-    },
     "EstimateResourcesResponse": {
         "gas": "u256",
         "storage": "i32",
@@ -178,21 +102,19 @@
         "value": "Option<U128>",
         "data": "Option<Bytes>"
     },
-    "RedeemStrategy": {
-        "_enum": {
-            "Immediately": "Null",
-            "Target": "EraIndex",
-            "WaitForUnbonding": "Null"
-        }
+    "CommitmentOf": {
+        "duration": "LockDuration",
+        "amount": "BalanceOf",
+        "candidate": "AccountId"
     },
-    "RelaychainAccountId": "AccountId",
-    "SlashInfo": {
-        "validator": "RelaychainAccountId",
-        "relaychainTokenAmount": "Balance"
+    "Era": {
+        "index": "u32",
+        "start": "BlockNumber"
     },
-    "ValidatorBacking": {
-        "totalInsurance": "Balance",
-        "isFrozen": "Boolean"
+    "LockDuration": {
+        "OneMonth": 0,
+        "OneYear": 1,
+        "TenYears": 2
     },
     "PoolId": {
         "_enum": {
@@ -202,71 +124,14 @@
             "Homa": "Null"
         }
     },
-    "Position": {
-        "collateral": "Balance",
-        "debit": "Balance"
-    },
-    "CID": "Vec<u8>",
-    "ClassId": "u32",
-    "ClassIdOf": "ClassId",
-    "TokenId": "u64",
-    "TokenIdOf": "TokenId",
-    "ClassInfoOf": {
-        "metadata": "CID",
-        "totalIssuance": "TokenId",
-        "owner": "AccountId",
-        "data": "ClassData"
-    },
-    "TokenInfoOf": {
-        "metadata": "CID",
-        "owner": "AccountId",
-        "data": "TokenData"
-    },
-    "ClassData": {
-        "deposit": "Balance",
-        "properties": "Properties"
-    },
-    "TokenData": {
-        "deposit": "Balance"
-    },
-    "Properties": {
-        "_set": {
-            "_bitLength": 8,
-            "Transferable": 1,
-            "Burnable": 2
-        }
-    },
-    "HomaUnlockChunk": {
-        "value": "Compact<Balance>",
-        "era": "Compact<EraIndex>"
-    },
-    "BondingLedger": {
-        "total": "Compact<Balance>",
-        "active": "Compact<Balance>",
-        "unlocking": "Vec<UnlockChunk>"
-    },
     "Amount": "i128",
     "AmountOf": "Amount",
     "AuctionId": "u32",
     "AuctionIdOf": "AuctionId",
     "TokenSymbol": {
         "_enum": {
-            "ACA": 0,
-            "AUSD": 1,
-            "DOT": 2,
-            "LDOT": 3,
-            "XBTC": 4,
-            "RENBTC": 5,
-            "POLKABTC": 6,
-            "PLM": 7,
-            "PHA": 8,
-            "HDT": 9,
-            "KAR": 128,
-            "KUSD": 129,
-            "KSM": 130,
-            "LKSM": 131,
-            "SDN": 135,
-            "KILT": 138
+            "REEF": 0,
+            "RUSD": 1
         }
     },
     "CurrencyId": {
@@ -277,66 +142,17 @@
         }
     },
     "CurrencyIdOf": "CurrencyId",
-    "AirDropCurrencyId": {
-        "_enum": [
-            "KAR",
-            "ACA"
-        ]
-    },
     "AuthoritysOriginId": {
         "_enum": [
-            "Root",
-            "AcalaTreasury",
-            "HonzonTreasury",
-            "HomaTreasury",
-            "DSWF"
+            "Root"
         ]
     },
     "TradingPair": "(CurrencyId,  CurrencyId)",
-    "NFTBalance": "u128",
     "OracleKey": "CurrencyId",
     "AsOriginId": "AuthoritysOriginId",
-    "SubAccountStatus": {
-        "bonded": "Balance",
-        "available": "Balance",
-        "unbonding": "Vec<(EraIndex,Balance)>",
-        "mockRewardRate": "Rate"
-    },
-    "Params": {
-        "targetMaxFreeUnbondedRatio": "Ratio",
-        "targetMinFreeUnbondedRatio": "Ratio",
-        "targetUnbondingToFreeRatio": "Ratio",
-        "unbondingToFreeAdjustment": "Ratio",
-        "baseFeeRate": "Rate"
-    },
-    "Ledger": {
-        "bonded": "Balance",
-        "unbondingToFree": "Balance",
-        "freePool": "Balance",
-        "toUnbondNextEra": "(Balance, Balance)"
-    },
-    "ChangeRate": {
-        "_enum": {
-            "NoChange": "Null",
-            "NewValue": "Rate"
-        }
-    },
-    "ChangeRatio": {
-        "_enum": {
-            "NoChange": "Null",
-            "NewValue": "Ratio"
-        }
-    },
-    "BalanceInfo": {
-        "amount": "Balance"
-    },
-    "PolkadotAccountId": "AccountId",
-    "PolkadotAccountIdOf": "PolkadotAccountId",
     "ExchangeRate": "FixedU128",
     "Rate": "FixedU128",
     "Ratio": "FixedU128",
-    "PublicKey": "[u8; 20]",
-    "DestAddress": "Vec<u8>",
     "Keys": "SessionKeys2",
     "PalletsOrigin": {
         "_enum": {

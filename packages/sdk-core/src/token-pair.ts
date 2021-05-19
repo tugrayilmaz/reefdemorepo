@@ -2,7 +2,6 @@ import { Token } from '@reef-defi/sdk-core/token';
 import { CurrencyId, TradingPair } from '@reef-defi/types/interfaces';
 import { ApiPromise, ApiRx } from '@polkadot/api';
 import { assert } from '@polkadot/util';
-import { DexShare } from './dex-share';
 
 // class for store token pair
 export class TokenPair {
@@ -57,10 +56,6 @@ export class TokenPair {
 
   public toChainData(): [string | { Token: string }, string | { Token: string }] {
     return [this.token1.toChainData(), this.token2.toChainData()];
-  }
-
-  public toDexShare(): DexShare {
-    return DexShare.fromTokenPair(this);
   }
 
   public toTradingPair(api: ApiRx | ApiPromise): TradingPair {

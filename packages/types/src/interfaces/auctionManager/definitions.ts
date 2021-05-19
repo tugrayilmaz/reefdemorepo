@@ -1,4 +1,0 @@
-import { Definitions } from '@polkadot/types/types';
-import auctionManager from '@reef-defi/type-definitions/auctionManager';
-
-export default auctionManager as Definitions;
