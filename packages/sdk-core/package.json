@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/sdk-core",
-  "version": "0.1.5",
+  "version": "0.1.6-0",
   "description": "the core of Reef Chain SDK",
   "main": "index.js",
   "author": "Reef Developers",
@@ -17,8 +17,8 @@
   "dependencies": {
     "@polkadot/api": "^4.3.1",
     "@polkadot/types": "^4.3.1",
-    "@reef-defi/api": "^0.1.5",
-    "@reef-defi/type-definitions": "^0.1.5",
+    "@reef-defi/api": "^0.1.6-0",
+    "@reef-defi/type-definitions": "^0.1.6-0",
     "@types/events": "^3.0.0",
     "bignumber.js": "^9.0.0",
     "events": "^3.2.0",
