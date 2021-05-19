@@ -5,12 +5,6 @@ import type { Enum, i128, u128, u32 } from '@polkadot/types';
 import type { ITuple } from '@polkadot/types/types';
 import type { EvmAddress } from '@reef-defi/types/interfaces/evm';
 
-/** @name AirDropCurrencyId */
-export interface AirDropCurrencyId extends Enum {
-  readonly isKar: boolean;
-  readonly isAca: boolean;
-}
-
 /** @name Amount */
 export interface Amount extends i128 {}
 
@@ -26,10 +20,6 @@ export interface AuctionIdOf extends AuctionId {}
 /** @name AuthoritysOriginId */
 export interface AuthoritysOriginId extends Enum {
   readonly isRoot: boolean;
-  readonly isAcalaTreasury: boolean;
-  readonly isHonzonTreasury: boolean;
-  readonly isHomaTreasury: boolean;
-  readonly isDswf: boolean;
 }
 
 /** @name CurrencyId */
@@ -45,37 +35,13 @@ export interface CurrencyId extends Enum {
 /** @name CurrencyIdOf */
 export interface CurrencyIdOf extends CurrencyId {}
 
-/** @name DataProviderId */
-export interface DataProviderId extends Enum {
-  readonly isAggregated: boolean;
-  readonly isAcala: boolean;
-  readonly isBand: boolean;
-}
-
-/** @name NFTBalance */
-export interface NFTBalance extends u128 {}
-
 /** @name Share */
 export interface Share extends u128 {}
 
 /** @name TokenSymbol */
 export interface TokenSymbol extends Enum {
-  readonly isAca: boolean;
-  readonly isAusd: boolean;
-  readonly isDot: boolean;
-  readonly isLdot: boolean;
-  readonly isXbtc: boolean;
-  readonly isRenbtc: boolean;
-  readonly isPolkabtc: boolean;
-  readonly isPlm: boolean;
-  readonly isPha: boolean;
-  readonly isHdt: boolean;
-  readonly isKar: boolean;
-  readonly isKusd: boolean;
-  readonly isKsm: boolean;
-  readonly isLksm: boolean;
-  readonly isSdn: boolean;
-  readonly isKilt: boolean;
+  readonly isReef: boolean;
+  readonly isRusd: boolean;
 }
 
 /** @name TradingPair */

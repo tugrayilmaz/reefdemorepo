@@ -2,21 +2,12 @@
 import { rpc as ormlRpc, types as ormlTypes, typesAlias as ormlAlias } from '@open-web3/orml-type-definitions';
 import { jsonrpcFromDefs, typesAliasFromDefs, typesFromDefs } from '@open-web3/orml-type-definitions/utils';
 import accounts from './accounts';
-import auctionManager from './auctionManager';
-import cdpEngine from './cdpEngine';
-import dex from './dex';
 import evm from './evm';
-import homa from './homa';
-import homaValidatorList from './homa-validator-list';
+import poc from './poc';
 import incentives from './incentives';
-import loans from './loans';
-import nft from './nft';
-import nomineesElection from './nomineesElection';
 import primitives from './primitives';
-import renvmBridge from './renvmBridge';
 import runtime from './runtime';
 import { signedExtensions as acalaSignedExtensions } from './signedExtensions';
-import stakingPool from './stakingPool';
 import support from './support';
 import versioned from './types-known/versioned';
 
@@ -86,26 +77,18 @@ const additionalOverride = {
       Sudo: 'Null',
       TransactionPayment: 'Null'
     }
+
   }
 };
 
 const acalaDefs = {
   accounts,
-  auctionManager,
-  cdpEngine,
-  dex,
   evm,
-  homa,
-  homaValidatorList,
+  poc,
   incentives,
-  loans,
-  nft,
-  nomineesElection,
   primitives,
   runtime,
-  stakingPool,
   support,
-  renvmBridge
 };
 
 export const types = {

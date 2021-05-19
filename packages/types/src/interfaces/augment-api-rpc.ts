@@ -22,12 +22,8 @@ import type { FeeDetails, RuntimeDispatchInfo } from '@polkadot/types/interfaces
 import type { RpcMethods } from '@polkadot/types/interfaces/rpc';
 import type { ReadProof, RuntimeVersion } from '@polkadot/types/interfaces/state';
 import type { ApplyExtrinsicResult, ChainProperties, ChainType, Health, NetworkState, NodeRole, PeerInfo, SyncState } from '@polkadot/types/interfaces/system';
-import type { BalanceRequest, BalanceWrapper } from '@reef-defi/types/interfaces/dex';
 import type { CallRequest, EstimateResourcesResponse } from '@reef-defi/types/interfaces/evm';
-import type { CurrencyId } from '@reef-defi/types/interfaces/primitives';
 import type { AccountId, BlockNumber, H160, H256, H64, Hash, Header, Index, Justification, KeyValue, OracleKey, SignedBlock, StorageData } from '@reef-defi/types/interfaces/runtime';
-import type { BalanceInfo } from '@reef-defi/types/interfaces/stakingPool';
-import type { ExchangeRate } from '@reef-defi/types/interfaces/support';
 
 declare module '@polkadot/rpc-core/types.jsonrpc' {
   export interface RpcInterface {
@@ -138,16 +134,6 @@ declare module '@polkadot/rpc-core/types.jsonrpc' {
        * Returns the projected time a given contract will be able to sustain paying its rent
        **/
       rentProjection: AugmentedRpc<(address: AccountId | string | Uint8Array, at?: BlockHash | string | Uint8Array) => Observable<Option<BlockNumber>>>;
-    };
-    dex: {
-      /**
-       * Get supply amount
-       **/
-      getSupplyAmount: AugmentedRpc<(supplyCurrencyId: CurrencyId | { Token: any } | { DEXShare: any } | { ERC20: any } | string | Uint8Array, targetCurrencyId: CurrencyId | { Token: any } | { DEXShare: any } | { ERC20: any } | string | Uint8Array, targetCurrencyAmount: BalanceRequest | { amount?: any } | string | Uint8Array) => Observable<BalanceWrapper>>;
-      /**
-       * Get target amount
-       **/
-      getTargetAmount: AugmentedRpc<(supplyCurrencyId: CurrencyId | { Token: any } | { DEXShare: any } | { ERC20: any } | string | Uint8Array, targetCurrencyId: CurrencyId | { Token: any } | { DEXShare: any } | { ERC20: any } | string | Uint8Array, supplyCurrencyAmount: BalanceRequest | { amount?: any } | string | Uint8Array) => Observable<BalanceWrapper>>;
     };
     engine: {
       /**
@@ -404,16 +390,6 @@ declare module '@polkadot/rpc-core/types.jsonrpc' {
        * Retrieves the list of RPC methods that are exposed by the node
        **/
       methods: AugmentedRpc<() => Observable<RpcMethods>>;
-    };
-    stakingPool: {
-      /**
-       * Get Available Unbonded
-       **/
-      getAvailableUnbonded: AugmentedRpc<(account: AccountId | string | Uint8Array) => Observable<BalanceInfo>>;
-      /**
-       * get liquid staking exchange rate
-       **/
-      getLiquidStakingExchangeRate: AugmentedRpc<() => Observable<ExchangeRate>>;
     };
     state: {
       /**
