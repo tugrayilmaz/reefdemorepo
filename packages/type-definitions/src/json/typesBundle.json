@@ -103,12 +103,16 @@
                         "method": "call",
                         "section": "evm"
                     },
-                    "estimateGas": {
-                        "description": "eth estimateGas",
+                    "estimateResources": {
+                        "description": "eth estimateResources",
                         "params": [
                             {
-                                "name": "data",
-                                "type": "CallRequest"
+                                "name": "from",
+                                "type": "H160"
+                            },
+                            {
+                                "name": "unsignedExtrinsic",
+                                "type": "Bytes"
                             },
                             {
                                 "name": "at",
@@ -117,10 +121,10 @@
                                 "isOptional": true
                             }
                         ],
-                        "type": "u128",
+                        "type": "EstimateResourcesResponse",
                         "isSubscription": false,
-                        "jsonrpc": "evm_estimateGas",
-                        "method": "estimateGas",
+                        "jsonrpc": "evm_estimateResources",
+                        "method": "estimateResources",
                         "section": "evm"
                     }
                 },
@@ -307,6 +311,11 @@
                                 "Provisioning": "TradingPairProvisionParameters",
                                 "Enabled": "Null"
                             }
+                        },
+                        "EstimateResourcesResponse": {
+                            "gas": "u256",
+                            "storage": "i32",
+                            "weightFee": "u256"
                         },
                         "EvmAccountInfo": {
                             "nonce": "Index",
@@ -705,6 +714,11 @@
                                 "Enabled": "Null"
                             }
                         },
+                        "EstimateResourcesResponse": {
+                            "gas": "u256",
+                            "storage": "i32",
+                            "weightFee": "u256"
+                        },
                         "EvmAccountInfo": {
                             "nonce": "Index",
                             "contractInfo": "Option<EvmContractInfo>",
@@ -1101,6 +1115,11 @@
                                 "Provisioning": "TradingPairProvisionParameters",
                                 "Enabled": "Null"
                             }
+                        },
+                        "EstimateResourcesResponse": {
+                            "gas": "u256",
+                            "storage": "i32",
+                            "weightFee": "u256"
                         },
                         "EvmAccountInfo": {
                             "nonce": "Index",
@@ -1470,12 +1489,16 @@
                         "method": "call",
                         "section": "evm"
                     },
-                    "estimateGas": {
-                        "description": "eth estimateGas",
+                    "estimateResources": {
+                        "description": "eth estimateResources",
                         "params": [
                             {
-                                "name": "data",
-                                "type": "CallRequest"
+                                "name": "from",
+                                "type": "H160"
+                            },
+                            {
+                                "name": "unsignedExtrinsic",
+                                "type": "Bytes"
                             },
                             {
                                 "name": "at",
@@ -1484,10 +1507,10 @@
                                 "isOptional": true
                             }
                         ],
-                        "type": "u128",
+                        "type": "EstimateResourcesResponse",
                         "isSubscription": false,
-                        "jsonrpc": "evm_estimateGas",
-                        "method": "estimateGas",
+                        "jsonrpc": "evm_estimateResources",
+                        "method": "estimateResources",
                         "section": "evm"
                     }
                 },
@@ -1674,6 +1697,11 @@
                                 "Provisioning": "TradingPairProvisionParameters",
                                 "Enabled": "Null"
                             }
+                        },
+                        "EstimateResourcesResponse": {
+                            "gas": "u256",
+                            "storage": "i32",
+                            "weightFee": "u256"
                         },
                         "EvmAccountInfo": {
                             "nonce": "Index",
@@ -2072,6 +2100,11 @@
                                 "Enabled": "Null"
                             }
                         },
+                        "EstimateResourcesResponse": {
+                            "gas": "u256",
+                            "storage": "i32",
+                            "weightFee": "u256"
+                        },
                         "EvmAccountInfo": {
                             "nonce": "Index",
                             "contractInfo": "Option<EvmContractInfo>",
@@ -2468,6 +2501,11 @@
                                 "Provisioning": "TradingPairProvisionParameters",
                                 "Enabled": "Null"
                             }
+                        },
+                        "EstimateResourcesResponse": {
+                            "gas": "u256",
+                            "storage": "i32",
+                            "weightFee": "u256"
                         },
                         "EvmAccountInfo": {
                             "nonce": "Index",
