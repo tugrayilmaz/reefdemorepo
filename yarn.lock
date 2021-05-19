@@ -2232,7 +2232,6 @@ __metadata:
     "@babel/runtime": ^7.10.2
     "@open-web3/orml-types": ^0.9.1
     "@polkadot/api-derive": ^4.3.1
-    "@reef-defi/types": ^0.1.4
   languageName: unknown
   linkType: soft
 
@@ -2244,8 +2243,6 @@ __metadata:
     "@open-web3/orml-api-derive": ^0.9.1
     "@polkadot/api": ^4.3.1
     "@polkadot/rpc-core": ^4.3.1
-    "@reef-defi/api-derive": ^0.1.4
-    "@reef-defi/types": ^0.1.4
   languageName: unknown
   linkType: soft
 
@@ -2317,7 +2314,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@reef-defi/types@^0.1.4, @reef-defi/types@workspace:packages/types":
+"@reef-defi/types@workspace:packages/types":
   version: 0.0.0-use.local
   resolution: "@reef-defi/types@workspace:packages/types"
   dependencies:
@@ -2327,7 +2324,6 @@ __metadata:
     "@polkadot/api": ^4.3.1
     "@polkadot/typegen": ^4.3.1
     "@polkadot/types": ^4.3.1
-    "@reef-defi/type-definitions": ^0.1.4
     "@types/websocket": ^1.0.0
     websocket: ^1.0.31
   languageName: unknown
