@@ -2225,7 +2225,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@reef-defi/api-derive@^0.1.5, @reef-defi/api-derive@workspace:packages/api-derive":
+"@reef-defi/api-derive@workspace:packages/api-derive":
   version: 0.0.0-use.local
   resolution: "@reef-defi/api-derive@workspace:packages/api-derive"
   dependencies:
@@ -2255,7 +2255,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@reef-defi/sdk-core@^0.1.5, @reef-defi/sdk-core@workspace:packages/sdk-core":
+"@reef-defi/sdk-core@workspace:packages/sdk-core":
   version: 0.0.0-use.local
   resolution: "@reef-defi/sdk-core@workspace:packages/sdk-core"
   dependencies:
@@ -2267,41 +2267,6 @@ __metadata:
     "@types/lodash": ^4.14.161
     bignumber.js: ^9.0.0
     events: ^3.2.0
-    lodash: ^4.17.20
-  languageName: unknown
-  linkType: soft
-
-"@reef-defi/sdk-homa@workspace:packages/sdk-homa":
-  version: 0.0.0-use.local
-  resolution: "@reef-defi/sdk-homa@workspace:packages/sdk-homa"
-  dependencies:
-    "@reef-defi/sdk-core": ^0.1.5
-    "@types/lodash": ^4.14.161
-    lodash: ^4.17.20
-  languageName: unknown
-  linkType: soft
-
-"@reef-defi/sdk-loan@workspace:packages/sdk-loan":
-  version: 0.0.0-use.local
-  resolution: "@reef-defi/sdk-loan@workspace:packages/sdk-loan"
-  dependencies:
-    "@polkadot/api": ^4.3.1
-    "@polkadot/types": ^4.3.1
-    "@reef-defi/api-derive": ^0.1.5
-    "@reef-defi/sdk-core": ^0.1.5
-    "@types/lodash": ^4.14.161
-    lodash: ^4.17.20
-  languageName: unknown
-  linkType: soft
-
-"@reef-defi/sdk-swap@workspace:packages/sdk-swap":
-  version: 0.0.0-use.local
-  resolution: "@reef-defi/sdk-swap@workspace:packages/sdk-swap"
-  dependencies:
-    "@polkadot/api": ^4.3.1
-    "@polkadot/types": ^4.3.1
-    "@reef-defi/sdk-core": ^0.1.5
-    "@types/lodash": ^4.14.161
     lodash: ^4.17.20
   languageName: unknown
   linkType: soft
