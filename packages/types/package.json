@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/types",
-  "version": "0.1.6-0",
+  "version": "0.1.6",
   "description": "Polkadot.js type definations for Reef Chain",
   "main": "index.js",
   "author": "Reef Developers",
