@@ -2235,7 +2235,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@reef-defi/api@^0.1.6, @reef-defi/api@workspace:packages/api":
+"@reef-defi/api@^0.1.7-0, @reef-defi/api@workspace:packages/api":
   version: 0.0.0-use.local
   resolution: "@reef-defi/api@workspace:packages/api"
   dependencies:
@@ -2261,8 +2261,8 @@ __metadata:
   dependencies:
     "@polkadot/api": ^4.3.1
     "@polkadot/types": ^4.3.1
-    "@reef-defi/api": ^0.1.6
-    "@reef-defi/type-definitions": ^0.1.6
+    "@reef-defi/api": ^0.1.7-0
+    "@reef-defi/type-definitions": ^0.1.7-0
     "@types/events": ^3.0.0
     "@types/lodash": ^4.14.161
     bignumber.js: ^9.0.0
@@ -2271,7 +2271,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@reef-defi/type-definitions@^0.1.6, @reef-defi/type-definitions@workspace:packages/type-definitions":
+"@reef-defi/type-definitions@^0.1.7-0, @reef-defi/type-definitions@workspace:packages/type-definitions":
   version: 0.0.0-use.local
   resolution: "@reef-defi/type-definitions@workspace:packages/type-definitions"
   dependencies:
