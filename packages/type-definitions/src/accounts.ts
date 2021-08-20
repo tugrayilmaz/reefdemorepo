@@ -1,6 +1,7 @@
 export default {
   rpc: {},
   types: {
-    PalletBalanceOf: 'Balance'
+    PalletBalanceOf: 'Balance',
+    AccountInfo: 'AccountInfoWithDualRefCount'
   }
 };
