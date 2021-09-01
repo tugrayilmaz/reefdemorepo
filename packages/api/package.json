@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/api",
-  "version": "0.1.7-0",
+  "version": "0.1.7",
   "description": "Reef Chain JS API",
   "main": "index.js",
   "author": "Reef Developers",

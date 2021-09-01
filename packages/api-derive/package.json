@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/api-derive",
-  "version": "0.1.7-0",
+  "version": "0.1.7",
   "description": "Additional polkadot.js derives for Reef Chain",
   "main": "index.js",
   "author": "Reef Developers",
