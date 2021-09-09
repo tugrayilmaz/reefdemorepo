@@ -1,7 +1,7 @@
 // Auto-generated via `yarn polkadot-types-from-defs`, do not edit
 /* eslint-disable */
 
-import type { Struct, u32 } from '@polkadot/types';
+import type { Enum, Struct, u32 } from '@polkadot/types';
 import type { AccountId, BalanceOf, BlockNumber } from '@reef-defi/types/interfaces/runtime';
 
 /** @name CommitmentOf */
@@ -18,10 +18,10 @@ export interface Era extends Struct {
 }
 
 /** @name LockDuration */
-export interface LockDuration extends Struct {
-  readonly OneMonth: 0;
-  readonly OneYear: 1;
-  readonly TenYears: 2;
+export interface LockDuration extends Enum {
+  readonly isOneMonth: boolean;
+  readonly isOneYear: boolean;
+  readonly isTenYears: boolean;
 }
 
 export type PHANTOM_POC = 'poc';

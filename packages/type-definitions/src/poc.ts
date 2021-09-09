@@ -11,9 +11,7 @@ export default {
       start: 'BlockNumber'
     },
     LockDuration: {
-      OneMonth: 0,
-      OneYear: 1,
-      TenYears: 2
+      _enum: ['OneMonth', 'OneYear', 'TenYears']
     }
   }
 };
