@@ -156,7 +156,7 @@
     "ExchangeRate": "FixedU128",
     "Rate": "FixedU128",
     "Ratio": "FixedU128",
-    "Keys": "SessionKeys2",
+    "Keys": "SessionKeys4",
     "PalletsOrigin": {
         "_enum": {
             "System": "SystemOrigin",
