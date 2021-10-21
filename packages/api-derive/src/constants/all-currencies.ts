@@ -31,7 +31,7 @@ export function nativeCurrencyId(instanceId: string, api: ApiInterfaceRx): () =>
  */
 
 function getAllNonNativeCurrencyIds(api: ApiInterfaceRx): Vec<CurrencyId> {
-  return (api.consts.transactionPayment.allNonNativeCurrencyIds as unknown) as Vec<CurrencyId>;
+  return api.consts.transactionPayment.allNonNativeCurrencyIds as unknown as Vec<CurrencyId>;
 }
 
 /**

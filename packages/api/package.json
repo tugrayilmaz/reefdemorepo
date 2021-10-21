@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/api",
-  "version": "0.1.9-0",
+  "version": "1.0.0",
   "description": "Reef Chain JS API",
   "main": "index.js",
   "author": "Reef Developers",
@@ -16,8 +16,14 @@
   "homepage": "https://github.com/reef-defi/reef.js",
   "dependencies": {
     "@babel/runtime": "^7.10.2",
-    "@open-web3/orml-api-derive": "^0.9.1",
-    "@polkadot/api": "^4.3.1",
-    "@polkadot/rpc-core": "^4.3.1"
+    "@open-web3/orml-api-derive": "^1.0.1",
+    "@polkadot/api": "^6.3.1",
+    "@polkadot/rpc-core": "^6.3.1",
+    "@reef-defi/api-derive": "^1.0.0",
+    "@reef-defi/types": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@polkadot/api": "^6.3.1",
+    "@polkadot/types": "^6.3.1"
   }
 }

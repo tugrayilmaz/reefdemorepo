@@ -11,6 +11,7 @@
         "delay": "BlockNumber",
         "origin": "PalletsOrigin"
     },
+    "AuthorityOrigin": "DelayedOrigin",
     "StorageValue": "Vec<u8>",
     "GraduallyUpdate": {
         "key": "StorageKey",
@@ -56,22 +57,18 @@
         "perPeriod": "Compact<Balance>"
     },
     "VestingScheduleOf": "OrmlVestingSchedule",
+    "OrmlCurrencyId": "u8",
     "PoolInfo": {
+        "totalShares": "Share",
+        "rewards": "BTreeMap<OrmlCurrencyId, (Balance, Balance)>"
+    },
+    "CompactBalance": "Compact<Balance>",
+    "PoolInfoV0": {
         "totalShares": "Compact<Share>",
-        "totalRewards": "Compact<Balance>",
-        "totalWithdrawnRewards": "Compact<Balance>"
+        "totalRewards": "CompactBalance",
+        "totalWithdrawnRewards": "CompactBalance"
     },
     "Share": "u128",
-    "ChainId": {
-        "_enum": {
-            "RelayChain": "Null",
-            "ParaChain": "ParaId"
-        }
-    },
-    "XCurrencyId": {
-        "chainId": "ChainId",
-        "currencyId": "Vec<u8>"
-    },
     "OracleValue": "Price",
     "PalletBalanceOf": "Balance",
     "AccountInfo": "AccountInfoWithDualRefCount",

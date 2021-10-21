@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access */
-import { Metadata } from '@polkadot/metadata';
+import { Metadata } from '@polkadot/types';
 import { TypeRegistry } from '@polkadot/types/create';
 import { generateInterfaceTypes } from '@polkadot/typegen/generate/interfaceRegistry';
 import { generateTsDef } from '@polkadot/typegen/generate/tsDef';
@@ -10,7 +10,7 @@ import {
   generateDefaultRpc
 } from '@polkadot/typegen/generate';
 import { registerDefinitions } from '@polkadot/typegen/util';
-import generateMobx from '@open-web3/api-mobx/scripts/mobx';
+// import generateMobx from '@open-web3/api-mobx/scripts/mobx';
 import metaHex from '../src/metadata/static-latest';
 
 import * as defaultDefinations from '@polkadot/types/interfaces/definitions';
@@ -31,7 +31,7 @@ function filterModules(names: string[], defs: any): string {
 
   const filtered = metadata.toJSON() as any;
 
-  filtered.metadata.v12.modules = filtered.metadata.v12.modules.filter(({ name }: any) => names.includes(name));
+  filtered.metadata.v13.modules = filtered.metadata.v13.modules.filter(({ name }: any) => names.includes(name));
 
   return new Metadata(registry, filtered).toHex();
 }
@@ -85,4 +85,4 @@ generateDefaultConsts('packages/types/src/interfaces/augment-api-consts.ts', met
 generateDefaultTx('packages/types/src/interfaces/augment-api-tx.ts', metadata, definations);
 generateDefaultQuery('packages/types/src/interfaces/augment-api-query.ts', metadata, definations);
 generateDefaultRpc('packages/types/src/interfaces/augment-api-rpc.ts', definations);
-generateMobx('packages/types/src/interfaces/augment-api-mobx.ts', metaHex, definations);
+// generateMobx('packages/types/src/interfaces/augment-api-mobx.ts', metaHex, definations);

@@ -1,17 +1,16 @@
 // Auto-generated via `yarn polkadot-types-from-chain`, do not edit
 /* eslint-disable */
 
+import type { ApiTypes, SubmittableExtrinsic } from '@polkadot/api/types';
 import type { Compact } from '@polkadot/types';
-import type { AnyNumber } from '@polkadot/types/types';
 import type { Extrinsic } from '@polkadot/types/interfaces/extrinsics';
+import type { AnyNumber } from '@polkadot/types/types';
 import type { AmountOf, CurrencyIdOf } from '@reef-defi/types/interfaces/primitives';
 import type { BalanceOf, Call, LookupSource } from '@reef-defi/types/interfaces/runtime';
-import type { ApiTypes, SubmittableExtrinsic } from '@polkadot/api/types';
 
 declare module '@polkadot/api/types/submittable' {
   export interface AugmentedSubmittables<ApiType> {
     currencies: {
-      [key: string]: SubmittableExtrinsicFunction<ApiType>;
       /**
        * Transfer some balance to another account under `currency_id`.
        * 
@@ -32,6 +31,10 @@ declare module '@polkadot/api/types/submittable' {
        * The dispatch origin of this call must be _Root_.
        **/
       updateBalance: AugmentedSubmittable<(who: LookupSource | { Id: any } | { Index: any } | { Raw: any } | { Address32: any } | { Address20: any } | string | Uint8Array, currencyId: CurrencyIdOf | { Token: any } | { DEXShare: any } | { ERC20: any } | string | Uint8Array, amount: AmountOf | AnyNumber | Uint8Array) => SubmittableExtrinsic<ApiType>, [LookupSource, CurrencyIdOf, AmountOf]>;
+      /**
+       * Generic tx
+       **/
+      [key: string]: SubmittableExtrinsicFunction<ApiType>;
     };
   }
 

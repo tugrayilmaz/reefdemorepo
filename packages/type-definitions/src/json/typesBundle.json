@@ -13,6 +13,12 @@
                             {
                                 "name": "key",
                                 "type": "OracleKey"
+                            },
+                            {
+                                "name": "at",
+                                "type": "BlockHash",
+                                "isHistoric": true,
+                                "isOptional": true
                             }
                         ],
                         "type": "Option<TimestampedValue>",
@@ -27,6 +33,12 @@
                             {
                                 "name": "providerId",
                                 "type": "RpcDataProviderId"
+                            },
+                            {
+                                "name": "at",
+                                "type": "BlockHash",
+                                "isHistoric": true,
+                                "isOptional": true
                             }
                         ],
                         "type": "Vec<(OracleKey, Option<TimestampedValue>)>",
@@ -55,6 +67,26 @@
                         "isSubscription": false,
                         "jsonrpc": "evm_call",
                         "method": "call",
+                        "section": "evm"
+                    },
+                    "estimateGas": {
+                        "description": "eth estimateGas",
+                        "params": [
+                            {
+                                "name": "data",
+                                "type": "CallRequest"
+                            },
+                            {
+                                "name": "at",
+                                "type": "BlockHash",
+                                "isHistoric": true,
+                                "isOptional": true
+                            }
+                        ],
+                        "type": "u128",
+                        "isSubscription": false,
+                        "jsonrpc": "evm_estimateGas",
+                        "method": "estimateGas",
                         "section": "evm"
                     },
                     "estimateResources": {
@@ -102,6 +134,7 @@
                             "delay": "BlockNumber",
                             "origin": "PalletsOrigin"
                         },
+                        "AuthorityOrigin": "DelayedOrigin",
                         "StorageValue": "Vec<u8>",
                         "GraduallyUpdate": {
                             "key": "StorageKey",
@@ -147,22 +180,18 @@
                             "perPeriod": "Compact<Balance>"
                         },
                         "VestingScheduleOf": "OrmlVestingSchedule",
+                        "OrmlCurrencyId": "u8",
                         "PoolInfo": {
+                            "totalShares": "Share",
+                            "rewards": "BTreeMap<OrmlCurrencyId, (Balance, Balance)>"
+                        },
+                        "CompactBalance": "Compact<Balance>",
+                        "PoolInfoV0": {
                             "totalShares": "Compact<Share>",
-                            "totalRewards": "Compact<Balance>",
-                            "totalWithdrawnRewards": "Compact<Balance>"
+                            "totalRewards": "CompactBalance",
+                            "totalWithdrawnRewards": "CompactBalance"
                         },
                         "Share": "u128",
-                        "ChainId": {
-                            "_enum": {
-                                "RelayChain": "Null",
-                                "ParaChain": "ParaId"
-                            }
-                        },
-                        "XCurrencyId": {
-                            "chainId": "ChainId",
-                            "currencyId": "Vec<u8>"
-                        },
                         "OracleValue": "Price",
                         "PalletBalanceOf": "Balance",
                         "AccountInfo": "AccountInfoWithDualRefCount",
@@ -337,6 +366,7 @@
                             "delay": "BlockNumber",
                             "origin": "PalletsOrigin"
                         },
+                        "AuthorityOrigin": "DelayedOrigin",
                         "StorageValue": "Vec<u8>",
                         "GraduallyUpdate": {
                             "key": "StorageKey",
@@ -382,22 +412,18 @@
                             "perPeriod": "Compact<Balance>"
                         },
                         "VestingScheduleOf": "OrmlVestingSchedule",
+                        "OrmlCurrencyId": "u8",
                         "PoolInfo": {
+                            "totalShares": "Share",
+                            "rewards": "BTreeMap<OrmlCurrencyId, (Balance, Balance)>"
+                        },
+                        "CompactBalance": "Compact<Balance>",
+                        "PoolInfoV0": {
                             "totalShares": "Compact<Share>",
-                            "totalRewards": "Compact<Balance>",
-                            "totalWithdrawnRewards": "Compact<Balance>"
+                            "totalRewards": "CompactBalance",
+                            "totalWithdrawnRewards": "CompactBalance"
                         },
                         "Share": "u128",
-                        "ChainId": {
-                            "_enum": {
-                                "RelayChain": "Null",
-                                "ParaChain": "ParaId"
-                            }
-                        },
-                        "XCurrencyId": {
-                            "chainId": "ChainId",
-                            "currencyId": "Vec<u8>"
-                        },
                         "OracleValue": "Price",
                         "PalletBalanceOf": "Balance",
                         "AccountInfo": "AccountInfoWithDualRefCount",
@@ -572,6 +598,7 @@
                             "delay": "BlockNumber",
                             "origin": "PalletsOrigin"
                         },
+                        "AuthorityOrigin": "DelayedOrigin",
                         "StorageValue": "Vec<u8>",
                         "GraduallyUpdate": {
                             "key": "StorageKey",
@@ -617,22 +644,18 @@
                             "perPeriod": "Compact<Balance>"
                         },
                         "VestingScheduleOf": "OrmlVestingSchedule",
+                        "OrmlCurrencyId": "u8",
                         "PoolInfo": {
+                            "totalShares": "Share",
+                            "rewards": "BTreeMap<OrmlCurrencyId, (Balance, Balance)>"
+                        },
+                        "CompactBalance": "Compact<Balance>",
+                        "PoolInfoV0": {
                             "totalShares": "Compact<Share>",
-                            "totalRewards": "Compact<Balance>",
-                            "totalWithdrawnRewards": "Compact<Balance>"
+                            "totalRewards": "CompactBalance",
+                            "totalWithdrawnRewards": "CompactBalance"
                         },
                         "Share": "u128",
-                        "ChainId": {
-                            "_enum": {
-                                "RelayChain": "Null",
-                                "ParaChain": "ParaId"
-                            }
-                        },
-                        "XCurrencyId": {
-                            "chainId": "ChainId",
-                            "currencyId": "Vec<u8>"
-                        },
                         "OracleValue": "Price",
                         "PalletBalanceOf": "Balance",
                         "AccountInfo": "AccountInfoWithDualRefCount",
@@ -787,13 +810,13 @@
                 }
             ],
             "alias": {
-                "tokens": {
-                    "AccountData": "OrmlAccountData",
-                    "BalanceLock": "OrmlBalanceLock"
-                },
                 "evm": {
                     "AccountInfo": "EvmAccountInfo",
                     "ContractInfo": "EvmContractInfo"
+                },
+                "tokens": {
+                    "AccountData": "OrmlAccountData",
+                    "BalanceLock": "OrmlBalanceLock"
                 }
             }
         },
@@ -810,6 +833,12 @@
                             {
                                 "name": "key",
                                 "type": "OracleKey"
+                            },
+                            {
+                                "name": "at",
+                                "type": "BlockHash",
+                                "isHistoric": true,
+                                "isOptional": true
                             }
                         ],
                         "type": "Option<TimestampedValue>",
@@ -824,6 +853,12 @@
                             {
                                 "name": "providerId",
                                 "type": "RpcDataProviderId"
+                            },
+                            {
+                                "name": "at",
+                                "type": "BlockHash",
+                                "isHistoric": true,
+                                "isOptional": true
                             }
                         ],
                         "type": "Vec<(OracleKey, Option<TimestampedValue>)>",
@@ -852,6 +887,26 @@
                         "isSubscription": false,
                         "jsonrpc": "evm_call",
                         "method": "call",
+                        "section": "evm"
+                    },
+                    "estimateGas": {
+                        "description": "eth estimateGas",
+                        "params": [
+                            {
+                                "name": "data",
+                                "type": "CallRequest"
+                            },
+                            {
+                                "name": "at",
+                                "type": "BlockHash",
+                                "isHistoric": true,
+                                "isOptional": true
+                            }
+                        ],
+                        "type": "u128",
+                        "isSubscription": false,
+                        "jsonrpc": "evm_estimateGas",
+                        "method": "estimateGas",
                         "section": "evm"
                     },
                     "estimateResources": {
@@ -899,6 +954,7 @@
                             "delay": "BlockNumber",
                             "origin": "PalletsOrigin"
                         },
+                        "AuthorityOrigin": "DelayedOrigin",
                         "StorageValue": "Vec<u8>",
                         "GraduallyUpdate": {
                             "key": "StorageKey",
@@ -944,22 +1000,18 @@
                             "perPeriod": "Compact<Balance>"
                         },
                         "VestingScheduleOf": "OrmlVestingSchedule",
+                        "OrmlCurrencyId": "u8",
                         "PoolInfo": {
+                            "totalShares": "Share",
+                            "rewards": "BTreeMap<OrmlCurrencyId, (Balance, Balance)>"
+                        },
+                        "CompactBalance": "Compact<Balance>",
+                        "PoolInfoV0": {
                             "totalShares": "Compact<Share>",
-                            "totalRewards": "Compact<Balance>",
-                            "totalWithdrawnRewards": "Compact<Balance>"
+                            "totalRewards": "CompactBalance",
+                            "totalWithdrawnRewards": "CompactBalance"
                         },
                         "Share": "u128",
-                        "ChainId": {
-                            "_enum": {
-                                "RelayChain": "Null",
-                                "ParaChain": "ParaId"
-                            }
-                        },
-                        "XCurrencyId": {
-                            "chainId": "ChainId",
-                            "currencyId": "Vec<u8>"
-                        },
                         "OracleValue": "Price",
                         "PalletBalanceOf": "Balance",
                         "AccountInfo": "AccountInfoWithDualRefCount",
@@ -1134,6 +1186,7 @@
                             "delay": "BlockNumber",
                             "origin": "PalletsOrigin"
                         },
+                        "AuthorityOrigin": "DelayedOrigin",
                         "StorageValue": "Vec<u8>",
                         "GraduallyUpdate": {
                             "key": "StorageKey",
@@ -1179,22 +1232,18 @@
                             "perPeriod": "Compact<Balance>"
                         },
                         "VestingScheduleOf": "OrmlVestingSchedule",
+                        "OrmlCurrencyId": "u8",
                         "PoolInfo": {
+                            "totalShares": "Share",
+                            "rewards": "BTreeMap<OrmlCurrencyId, (Balance, Balance)>"
+                        },
+                        "CompactBalance": "Compact<Balance>",
+                        "PoolInfoV0": {
                             "totalShares": "Compact<Share>",
-                            "totalRewards": "Compact<Balance>",
-                            "totalWithdrawnRewards": "Compact<Balance>"
+                            "totalRewards": "CompactBalance",
+                            "totalWithdrawnRewards": "CompactBalance"
                         },
                         "Share": "u128",
-                        "ChainId": {
-                            "_enum": {
-                                "RelayChain": "Null",
-                                "ParaChain": "ParaId"
-                            }
-                        },
-                        "XCurrencyId": {
-                            "chainId": "ChainId",
-                            "currencyId": "Vec<u8>"
-                        },
                         "OracleValue": "Price",
                         "PalletBalanceOf": "Balance",
                         "AccountInfo": "AccountInfoWithDualRefCount",
@@ -1369,6 +1418,7 @@
                             "delay": "BlockNumber",
                             "origin": "PalletsOrigin"
                         },
+                        "AuthorityOrigin": "DelayedOrigin",
                         "StorageValue": "Vec<u8>",
                         "GraduallyUpdate": {
                             "key": "StorageKey",
@@ -1414,22 +1464,18 @@
                             "perPeriod": "Compact<Balance>"
                         },
                         "VestingScheduleOf": "OrmlVestingSchedule",
+                        "OrmlCurrencyId": "u8",
                         "PoolInfo": {
+                            "totalShares": "Share",
+                            "rewards": "BTreeMap<OrmlCurrencyId, (Balance, Balance)>"
+                        },
+                        "CompactBalance": "Compact<Balance>",
+                        "PoolInfoV0": {
                             "totalShares": "Compact<Share>",
-                            "totalRewards": "Compact<Balance>",
-                            "totalWithdrawnRewards": "Compact<Balance>"
+                            "totalRewards": "CompactBalance",
+                            "totalWithdrawnRewards": "CompactBalance"
                         },
                         "Share": "u128",
-                        "ChainId": {
-                            "_enum": {
-                                "RelayChain": "Null",
-                                "ParaChain": "ParaId"
-                            }
-                        },
-                        "XCurrencyId": {
-                            "chainId": "ChainId",
-                            "currencyId": "Vec<u8>"
-                        },
                         "OracleValue": "Price",
                         "PalletBalanceOf": "Balance",
                         "AccountInfo": "AccountInfoWithDualRefCount",
@@ -1584,13 +1630,13 @@
                 }
             ],
             "alias": {
-                "tokens": {
-                    "AccountData": "OrmlAccountData",
-                    "BalanceLock": "OrmlBalanceLock"
-                },
                 "evm": {
                     "AccountInfo": "EvmAccountInfo",
                     "ContractInfo": "EvmContractInfo"
+                },
+                "tokens": {
+                    "AccountData": "OrmlAccountData",
+                    "BalanceLock": "OrmlBalanceLock"
                 }
             }
         }

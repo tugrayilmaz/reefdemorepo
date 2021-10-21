@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/types",
-  "version": "0.1.9-0",
+  "version": "1.0.0",
   "description": "Polkadot.js type definations for Reef Chain",
   "main": "index.js",
   "author": "Reef Developers",
@@ -16,11 +16,11 @@
   "homepage": "https://github.com/reef-defi/reef.js",
   "dependencies": {
     "@babel/runtime": "^7.10.2",
-    "@open-web3/api-mobx": "^0.9.1",
-    "@open-web3/orml-types": "^0.9.1",
-    "@polkadot/api": "^4.3.1",
-    "@polkadot/typegen": "^4.3.1",
-    "@polkadot/types": "^4.3.1"
+    "@open-web3/api-mobx": "^1.0.1",
+    "@open-web3/orml-types": "^1.0.1",
+    "@polkadot/api": "^6.3.1",
+    "@polkadot/typegen": "^6.3.1",
+    "@polkadot/types": "^6.3.1"
   },
   "devDependencies": {
     "@types/websocket": "^1.0.0",
