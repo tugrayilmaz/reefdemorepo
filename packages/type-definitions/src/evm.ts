@@ -16,6 +16,22 @@ export default {
       ],
       type: 'Raw'
     },
+    estimateGas: {
+      description: 'eth estimateGas',
+      params: [
+        {
+          name: 'data',
+          type: 'CallRequest'
+        },
+        {
+          name: 'at',
+          type: 'BlockHash',
+          isHistoric: true,
+          isOptional: true
+        }
+      ],
+      type: 'u128'
+    },
     estimateResources: {
       description: 'eth estimateResources',
       params: [
