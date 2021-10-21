@@ -10,6 +10,12 @@
                 {
                     "name": "key",
                     "type": "OracleKey"
+                },
+                {
+                    "name": "at",
+                    "type": "BlockHash",
+                    "isHistoric": true,
+                    "isOptional": true
                 }
             ],
             "type": "Option<TimestampedValue>",
@@ -24,6 +30,12 @@
                 {
                     "name": "providerId",
                     "type": "RpcDataProviderId"
+                },
+                {
+                    "name": "at",
+                    "type": "BlockHash",
+                    "isHistoric": true,
+                    "isOptional": true
                 }
             ],
             "type": "Vec<(OracleKey, Option<TimestampedValue>)>",
@@ -52,6 +64,26 @@
             "isSubscription": false,
             "jsonrpc": "evm_call",
             "method": "call",
+            "section": "evm"
+        },
+        "estimateGas": {
+            "description": "eth estimateGas",
+            "params": [
+                {
+                    "name": "data",
+                    "type": "CallRequest"
+                },
+                {
+                    "name": "at",
+                    "type": "BlockHash",
+                    "isHistoric": true,
+                    "isOptional": true
+                }
+            ],
+            "type": "u128",
+            "isSubscription": false,
+            "jsonrpc": "evm_estimateGas",
+            "method": "estimateGas",
             "section": "evm"
         },
         "estimateResources": {
