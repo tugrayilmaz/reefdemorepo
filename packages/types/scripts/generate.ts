@@ -10,7 +10,7 @@ import {
   generateDefaultRpc
 } from '@polkadot/typegen/generate';
 import { registerDefinitions } from '@polkadot/typegen/util';
-//import generateMobx from '@open-web3/api-mobx/scripts/mobx';
+// import generateMobx from '@open-web3/api-mobx/scripts/mobx';
 import metaHex from '../src/metadata/static-latest';
 
 import * as defaultDefinations from '@polkadot/types/interfaces/definitions';
@@ -85,4 +85,4 @@ generateDefaultConsts('packages/types/src/interfaces/augment-api-consts.ts', met
 generateDefaultTx('packages/types/src/interfaces/augment-api-tx.ts', metadata, definations);
 generateDefaultQuery('packages/types/src/interfaces/augment-api-query.ts', metadata, definations);
 generateDefaultRpc('packages/types/src/interfaces/augment-api-rpc.ts', definations);
-//generateMobx('packages/types/src/interfaces/augment-api-mobx.ts', metaHex, definations);
+// generateMobx('packages/types/src/interfaces/augment-api-mobx.ts', metaHex, definations);
