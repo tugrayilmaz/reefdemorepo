@@ -71,7 +71,6 @@
     "Share": "u128",
     "OracleValue": "Price",
     "PalletBalanceOf": "Balance",
-    "AccountInfo": "AccountInfoWithDualRefCount",
     "EstimateResourcesResponse": {
         "gas": "u256",
         "storage": "i32",
