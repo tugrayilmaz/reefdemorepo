@@ -1,6 +1,6 @@
 {
   "name": "@reef-defi/sdk-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "the core of Reef Chain SDK",
   "main": "index.js",
   "author": "Reef Developers",
