@@ -31,5 +31,3 @@ export const typesAlias: Record<string, OverrideModuleType> = acalaTypeAlias;
 export const typesBundle = acalaTypesBundle as unknown as OverrideBundleType;
 
 export const signedExtensions = acalaSignedExtensions;
-
-console.log('ha2');
