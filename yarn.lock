@@ -1945,7 +1945,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/api-derive@npm:6.4.2, @polkadot/api-derive@npm:^6.3.1":
+"@polkadot/api-derive@npm:6.4.2, @polkadot/api-derive@npm:~6.4.2":
   version: 6.4.2
   resolution: "@polkadot/api-derive@npm:6.4.2"
   dependencies:
@@ -1960,7 +1960,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/api@npm:^6.3.1":
+"@polkadot/api@npm:~6.4.2":
   version: 6.4.2
   resolution: "@polkadot/api@npm:6.4.2"
   dependencies:
@@ -2002,7 +2002,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/rpc-core@npm:6.4.2, @polkadot/rpc-core@npm:^6.3.1":
+"@polkadot/rpc-core@npm:6.4.2, @polkadot/rpc-core@npm:~6.4.2":
   version: 6.4.2
   resolution: "@polkadot/rpc-core@npm:6.4.2"
   dependencies:
@@ -2031,7 +2031,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/typegen@npm:^6.3.1":
+"@polkadot/typegen@npm:~6.4.2":
   version: 6.4.2
   resolution: "@polkadot/typegen@npm:6.4.2"
   dependencies:
@@ -2078,7 +2078,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/types@npm:^6.3.1":
+"@polkadot/types@npm:~6.4.2":
   version: 6.4.2
   resolution: "@polkadot/types@npm:6.4.2"
   dependencies:
@@ -2233,7 +2233,7 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.10.2
     "@open-web3/orml-types": ^1.0.1
-    "@polkadot/api-derive": ^6.3.1
+    "@polkadot/api-derive": ~6.4.2
     "@reef-defi/types": ^1.0.1
   languageName: unknown
   linkType: soft
@@ -2244,13 +2244,13 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.10.2
     "@open-web3/orml-api-derive": ^1.0.1
-    "@polkadot/api": ^6.3.1
-    "@polkadot/rpc-core": ^6.3.1
+    "@polkadot/api": ~6.4.2
+    "@polkadot/rpc-core": ~6.4.2
     "@reef-defi/api-derive": ^1.0.1
     "@reef-defi/types": ^1.0.1
   peerDependencies:
-    "@polkadot/api": ^6.3.1
-    "@polkadot/types": ^6.3.1
+    "@polkadot/api": ~6.4.2
+    "@polkadot/types": ~6.4.2
   languageName: unknown
   linkType: soft
 
@@ -2267,8 +2267,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@reef-defi/sdk-core@workspace:packages/sdk-core"
   dependencies:
-    "@polkadot/api": ^6.3.1
-    "@polkadot/types": ^6.3.1
+    "@polkadot/api": ~6.4.2
+    "@polkadot/types": ~6.4.2
     "@reef-defi/api": ^1.0.1
     "@reef-defi/type-definitions": ^1.0.1
     "@types/events": ^3.0.0
@@ -2294,9 +2294,9 @@ __metadata:
     "@babel/runtime": ^7.10.2
     "@open-web3/api-mobx": ^1.0.1
     "@open-web3/orml-types": ^1.0.1
-    "@polkadot/api": ^6.3.1
-    "@polkadot/typegen": ^6.3.1
-    "@polkadot/types": ^6.3.1
+    "@polkadot/api": ~6.4.2
+    "@polkadot/typegen": ~6.4.2
+    "@polkadot/types": ~6.4.2
     "@types/websocket": ^1.0.0
     websocket: ^1.0.31
   languageName: unknown
