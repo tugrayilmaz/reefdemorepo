@@ -2227,7 +2227,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@reef-defi/api-derive@^1.0.1, @reef-defi/api-derive@workspace:packages/api-derive":
+"@reef-defi/api-derive@npm:^1.0.1":
+  version: 1.0.4
+  resolution: "@reef-defi/api-derive@npm:1.0.4"
+  dependencies:
+    "@babel/runtime": ^7.10.2
+    "@open-web3/orml-types": ^1.0.1
+    "@polkadot/api-derive": ~6.4.2
+    "@reef-defi/types": ^1.0.1
+  checksum: c7ef55de46da513604f23d5fe6918a3b89c9822f93359518baffbe7e3899fa231eb1fd8b0ff50b3c78e937ee24f498d751fbf07166de24813854b37729220172
+  languageName: node
+  linkType: hard
+
+"@reef-defi/api-derive@workspace:packages/api-derive":
   version: 0.0.0-use.local
   resolution: "@reef-defi/api-derive@workspace:packages/api-derive"
   dependencies:
@@ -2238,7 +2250,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@reef-defi/api@^1.0.1, @reef-defi/api@workspace:packages/api":
+"@reef-defi/api@npm:^1.0.1":
+  version: 1.0.4
+  resolution: "@reef-defi/api@npm:1.0.4"
+  dependencies:
+    "@babel/runtime": ^7.10.2
+    "@open-web3/orml-api-derive": ^1.0.1
+    "@polkadot/api": ~6.4.2
+    "@polkadot/rpc-core": ~6.4.2
+    "@reef-defi/api-derive": ^1.0.1
+    "@reef-defi/types": ^1.0.1
+  peerDependencies:
+    "@polkadot/api": ~6.4.2
+    "@polkadot/types": ~6.4.2
+  checksum: c61dcde01c55e1f9c4c025b8c0b42d5ab376bf4de327da608ecaa5e4fb703eba7777268433ad066c397b15d8304d3327c9e125c1629326c7e3def81d952988a4
+  languageName: node
+  linkType: hard
+
+"@reef-defi/api@workspace:packages/api":
   version: 0.0.0-use.local
   resolution: "@reef-defi/api@workspace:packages/api"
   dependencies:
@@ -2279,7 +2308,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@reef-defi/type-definitions@^1.0.1, @reef-defi/type-definitions@workspace:packages/type-definitions":
+"@reef-defi/type-definitions@npm:^1.0.1":
+  version: 1.0.4
+  resolution: "@reef-defi/type-definitions@npm:1.0.4"
+  dependencies:
+    "@open-web3/orml-type-definitions": ^1.0.1
+  checksum: 6f465114370b61ccaa43b6c7c81dae53187eacd7a99ec8c067fcf9319c1a4904c51d878e9a0ee653757c8d0ca753b02faaa1bc9b7eeec6aafbf67c2f298b5d63
+  languageName: node
+  linkType: hard
+
+"@reef-defi/type-definitions@workspace:packages/type-definitions":
   version: 0.0.0-use.local
   resolution: "@reef-defi/type-definitions@workspace:packages/type-definitions"
   dependencies:
@@ -2287,7 +2325,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@reef-defi/types@^1.0.1, @reef-defi/types@workspace:packages/types":
+"@reef-defi/types@npm:^1.0.1":
+  version: 1.0.4
+  resolution: "@reef-defi/types@npm:1.0.4"
+  dependencies:
+    "@babel/runtime": ^7.10.2
+    "@open-web3/api-mobx": ^1.0.1
+    "@open-web3/orml-types": ^1.0.1
+    "@polkadot/api": ~6.4.2
+    "@polkadot/typegen": ~6.4.2
+    "@polkadot/types": ~6.4.2
+  checksum: 462fe675c4d2248dcd41ba736c01084d16b8c81d055cbeb8ad9816c607d35b45963cba3567d9f851de157a0032d313b3e332ffcec2c43282a70ea5a3cdd5c749
+  languageName: node
+  linkType: hard
+
+"@reef-defi/types@workspace:packages/types":
   version: 0.0.0-use.local
   resolution: "@reef-defi/types@workspace:packages/types"
   dependencies:
